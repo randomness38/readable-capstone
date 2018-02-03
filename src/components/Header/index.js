@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { withRouter, NavLink, Link } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
-import FilterLink from './FilterLink';
+import FilterNavLink from './FilterNavLink';
 
 class Header extends Component {
     componentDidMount() {
@@ -28,22 +28,20 @@ class Header extends Component {
             <div>
                 <Link
                     to='/'
-                    className='navbar-brand'
-                    alt='Readable'
                 >Readable</Link>
 
                 {categories !== undefined && categories.map(category => (
-                    <FilterLink
+                    <FilterNavLink
                         filter={category.path}
+                        key={category.name}
                     >
                         {category.name}
-                    </FilterLink>
+                    </FilterNavLink>
                 ))}
 
                 <li className="nav-item">
                     <Link
                         to='/new'
-                        className="nav-link"
                     >new post</Link>
                 </li>
 
