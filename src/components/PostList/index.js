@@ -1,16 +1,8 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
-import PostItems from './PostItems';
-import FetchError from './FetchError';
-import { getVisiblePosts, getIsFetching, getErrorMessage  } from '../../reducers';
+import React from 'react';
 
-class PostList extends Component {
-    componentDidMount() {
-        this.fetchData();
-    }
+const PostList = () => {
 
+<<<<<<< HEAD
     componentDidUpdate(prevProps) {
         if (this.props.filter !== prevProps.filter) {
             this.fetchData();
@@ -27,23 +19,13 @@ class PostList extends Component {
        return (
 
        )
+=======
+    return (
+        <div>
+            PostList
+        </div>
+    );
+>>>>>>> parent of 4b2e0181... feetching 을 못함
 }
 
-const mapStateToProps = (state, { match: { params }}) => {
-    const category = params.category || 'readable';
-    // const category = params.category
-
-    return {
-        posts: getVisiblePosts(state, category),
-        isFetching: getIsFetching(state, category),
-        errorMessage: getErrorMessage(state, category),
-        category
-    };
-};
-
-PostList = withRouter(connect(
-    mapStateToProps,
-    actions
-)(PostList));
-
-export default PostList ;
+export default PostList;

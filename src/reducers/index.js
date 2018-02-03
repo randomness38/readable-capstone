@@ -1,25 +1,16 @@
-import { combineReducers } from 'redux';
-import posts, * as fromPosts from './posts';
-import categories from './categories';
 
-export default combineReducers({
-    posts,
-    categories,
-});
 
-// export const getVisiblePosts = (state, filter) => {
-//     const ids = getIds(state.listByFilter[filter]);
-//     return ids.map(id => getPost(state, id));
-// }
-//
-// export const getIsFetching = (state, filter) => {
-//     return getIsFetching(state.listByFilter[filter]);
-// }
-//
-// export const getErrorMessage = (state, filter) => {
-//     return getErrorMessage(state.listByFilter[filter]);
-// }
+const categories = (state = {}, action) => {
+    const { categories } = action
+    switch (action.type) {
+        case 'FETCH_CATEGORIES_SUCCESS':
+            return {
+                ...state,
+                categories
+                // ...action.response.entities.categories
+            };
 
+<<<<<<< HEAD
 // export const getVisiblePosts = (state, filter) => {
 //     const ids = fromPosts.getIds(state.listByFilter[filter]);
 //     return ids.map(id => fromPosts.getPost(state, id));
@@ -32,3 +23,13 @@ export default combineReducers({
 // export const getErrorMessage = (state, filter) => {
 //     return fromPosts.getErrorMessage(state.listByFilter[filter]);
 // }
+=======
+        default:
+            return state;
+    }
+}
+
+export default categories;
+
+// export const getTodo = (state, id) => state.byId[id];
+>>>>>>> parent of 4b2e0181... feetching 을 못함

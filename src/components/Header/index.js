@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter, NavLink, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import FilterLink from './FilterLink';
 
 class Header extends Component {
     componentDidMount() {
-        this.fetchData();
+        this.fetchCategories();
     }
 
     componentDidUpdate(prevProps) {
         if (this.props.category !== prevProps.category) {
-            this.fetchData();
+            this.fetchCategories();
         }
     }
 
-    fetchData() {
+    fetchCategories() {
         const { fetchCategories } = this.props;
 
         fetchCategories();
@@ -23,7 +23,7 @@ class Header extends Component {
 
     render() {
         const { categories } = this.props;
-        console.log('category: ' + {categories})
+        console.log(categories)
             return (
                 <div>
                     <Link

@@ -1,7 +1,6 @@
 import * as ReadableAPI from '../api';
-import { normalize } from 'normalizr';
-import * as schema from './schema';
-import { getIsFetching } from '../reducers';
+// import { normalize } from 'normalizr';
+// import * as schema from './schema';
 
 import * as actions from './ActionTypes'
 
@@ -16,6 +15,7 @@ export const fetchCategories = () => dispatch => (
             }))
 );
 
+<<<<<<< HEAD
 export const fetchPosts = (filter) => dispatch => (
     ReadableAPI
         .fetchPosts(filter)
@@ -53,6 +53,8 @@ export const fetchPosts = (filter) => dispatch => (
 //         }
 //     );
 // }
+=======
+>>>>>>> parent of 4b2e0181... feetching 을 못함
 
 
 // FETCH_POST_COMMENTS
