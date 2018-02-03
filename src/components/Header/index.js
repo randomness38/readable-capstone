@@ -24,32 +24,32 @@ class Header extends Component {
     render() {
         const { categories } = this.props;
         console.log(categories)
-            return (
-                <div>
+        return (
+            <div>
+                <Link
+                    to='/'
+                    className='navbar-brand'
+                    alt='Readable'
+                >Readable</Link>
+
+                {categories !== undefined && categories.map(category => (
+                    <FilterLink
+                        filter={category.path}
+                    >
+                        {category.name}
+                    </FilterLink>
+                ))}
+
+                <li className="nav-item">
                     <Link
-                        to='/'
-                        className='navbar-brand'
-                        alt='Readable'
-                    >Readable</Link>
+                        to='/new'
+                        className="nav-link"
+                    >new post</Link>
+                </li>
 
-                    {categories !== undefined && categories.map(category => (
-                        <FilterLink
-                            filter={category.path}
-                        >
-                            {category.name}
-                        </FilterLink>
-                    ))}
+            </div>
 
-                    <li className="nav-item">
-                        <Link
-                            to='/new'
-                            className="nav-link"
-                        >new post</Link>
-                    </li>
-
-                </div>
-
-            )
+        )
     }
 }
 

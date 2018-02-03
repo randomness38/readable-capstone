@@ -1,70 +1,23 @@
 import * as ReadableAPI from '../api';
-// import { normalize } from 'normalizr';
-// import * as schema from './schema';
+import * as action from './actionTypes'
 
-import * as actions from './ActionTypes'
-
-// Categories
 export const fetchCategories = () => dispatch => (
     ReadableAPI
         .fetchCategories()
         .then(categories =>
             dispatch({
-                type: actions.FETCH_CATEGORIES_SUCCESS,
+                type: action.FETCH_CATEGORIES_SUCCESS,
                 categories
             }))
 );
 
-<<<<<<< HEAD
-export const fetchPosts = (filter) => dispatch => (
-    ReadableAPI
-        .fetchPosts(filter)
-        .then(posts => dispatch({
-            type: actions.FETCH_POSTS,
-            posts
-        }))
-);
-
-// export const fetchPosts = (category) => (dispatch, getState) => {
-//     if (getIsFetching(getState(), category)) {
-//         return Promise.resolve();
-//     }
-//
-//     dispatch({
-//         type: 'FETCH_POSTS_REQUEST',
-//         category
-//     });
-//
-//     return ReadableAPI
-//         .fetchPosts(category).then(
-//         response => {
-//             dispatch({
-//                 type: 'FETCH_POSTS_SUCCESS',
-//                 category,
-//                 response: normalize(response, schema.arrayOfPosts),
-//             })
-//         },
-//         error => {
-//             dispatch({
-//                 type: 'FETCH_POSTS_FAILURE',
-//                 category,
-//                 message: error.message || 'Something went wrong.'
-//             })
-//         }
-//     );
-// }
-=======
->>>>>>> parent of 4b2e0181... feetching 을 못함
-
-
-// FETCH_POST_COMMENTS
 
 export const fetchPostComments = parentId => dispatch => (
     ReadableAPI
         .fetchPostComments(parentId)
         .then(comments =>
             dispatch({
-                type: actions.FETCH_POST_COMMENTS_SUCCESS,
+                type: action.FETCH_POST_COMMENTS_SUCCESS,
                 parentId,
                 comments
             }))
@@ -76,7 +29,7 @@ export const addNewComment = ( comment ) => dispatch => (
     ReadableAPI
         .addNewComment( comment )
         .then( comment => dispatch({
-            type: actions.ADD_COMMENT,
+            type: action.ADD_COMMENT,
             comment
         }))
 );
@@ -87,7 +40,7 @@ export const removeComment = ( comment ) => dispatch => (
     ReadableAPI
         .removeComment( comment.id )
         .then(dispatch({
-            type: actions.DELETE_COMMENT,
+            type: action.DELETE_COMMENT,
             comment
         }))
 );
@@ -97,16 +50,17 @@ export const updateComment = ( comment ) => dispatch => (
     ReadableAPI
         .updateComment( comment )
         .then( comment => dispatch({
-            type: actions.UPDATE_COMMENT,
+            type: action.UPDATE_COMMENT,
             comment,
         }))
 );
+
 
 export const fetchPost = (id) => dispatch => (
     ReadableAPI
         .fetchPost(id)
         .then(post => dispatch({
-            type: actions.FETCH_POST,
+            type: action.FETCH_POST,
             post,
         }))
 );
@@ -116,7 +70,7 @@ export const updatePost = post => dispatch => (
     ReadableAPI
         .updatePost(post)
         .then(post => dispatch({
-            type: actions.UPDATE_POST,
+            type: action.UPDATE_POST,
             post,
         }))
 );
@@ -127,7 +81,7 @@ export const addNewPost = ( post ) => dispatch => (
     ReadableAPI
         .addPost( post )
         .then(post => dispatch({
-            type: actions.ADD_POST,
+            type: action.ADD_POST,
             post
         }))
 );
@@ -137,7 +91,36 @@ export const removePost = ( post ) => dispatch => (
     ReadableAPI
         .removePost( post.id )
         .then(dispatch({
-            type: actions.DELETE_POST,
+            type: action.DELETE_POST,
             post
+        }))
+);
+
+// FETCH_POSTS
+export const fetchPosts = (filter) => dispatch => (
+    ReadableAPI
+        .fetchPosts(filter)
+        .then(posts => dispatch({
+            type: action.FETCH_POSTS,
+            posts
+        }))
+);
+
+
+export const setSort = (orderby, sort) => {
+    return {
+        type: action.SET_SORT,
+        orderby,
+        sort
+    }
+}
+
+export const postVote = (id, option, type) => dispatch => (
+    ReadableAPI
+        .vote(id, option, type)
+        .then( data => dispatch({
+            type: action.VOTE,
+            id,
+            score:data.voteScore
         }))
 );
