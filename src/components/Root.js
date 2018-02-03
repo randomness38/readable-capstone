@@ -104,4 +104,3 @@ Root.propTypes = {
     categoriesIds: PropTypes.array.isRequired,
 };
 
-export default RootConnected

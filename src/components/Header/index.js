@@ -9,11 +9,18 @@ class Header extends Component {
         this.fetchCategories();
     }
 
-    componentDidUpdate(prevProps) {
-        if (this.props.category !== prevProps.category) {
-            this.fetchCategories();
-        }
-    }
+    // componentWillMount(){
+    //     const { categories } =  this.props;
+    //     if ( Object.keys(categories).length === 0 ) {
+    //         this.fetchCategories()
+    //     }
+    // }
+
+    // componentDidUpdate(prevProps) {
+    //     if (this.props.category !== prevProps.category) {
+    //         this.fetchCategories();
+    //     }
+    // }
 
     fetchCategories() {
         const { fetchCategories } = this.props;
@@ -22,7 +29,7 @@ class Header extends Component {
     }
 
     render() {
-        const { categories } = this.props;
+        const {categoriesIds, categories} =  this.props;
         console.log(categories)
         return (
             <div>
@@ -30,12 +37,12 @@ class Header extends Component {
                     to='/'
                 >Readable</Link>
 
-                {categories !== undefined && categories.map(category => (
+                {categoriesIds !== undefined && categoriesIds.map(category => (
                     <FilterNavLink
-                        filter={category.path}
+                        filter={categories[category].path}
                         key={category.name}
                     >
-                        {category.name}
+                        {categories[category].name}
                     </FilterNavLink>
                 ))}
 
@@ -51,9 +58,12 @@ class Header extends Component {
     }
 }
 
-const mapStateToProps  = (state) => ({
-    categories: state.categories,
-})
+function mapStateToProps(state){
+    return{
+        categories: state.categories,
+        categoriesIds: state.categoriesIds
+    }
+}
 
 Header = withRouter(connect(
     mapStateToProps,

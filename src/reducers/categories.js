@@ -45,7 +45,7 @@ export default function categoriesReducer(state = {}, action) {
             const normalizedData = normalize(data, categoriesSchema);
 
             return {
-                ...state,
+                // ...state,
                 categories: normalizedData.entities.categories,
                 categoriesIds: normalizedData.result.categories
 
