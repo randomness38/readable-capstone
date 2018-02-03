@@ -16,43 +16,43 @@ export const fetchCategories = () => dispatch => (
             }))
 );
 
-// export const fetchPosts = (filter) => dispatch => (
-//     ReadableAPI
-//         .fetchPosts(filter)
-//         .then(posts => dispatch({
-//             type: actions.FETCH_POSTS,
-//             posts
-//         }))
-// );
+export const fetchPosts = (filter) => dispatch => (
+    ReadableAPI
+        .fetchPosts(filter)
+        .then(posts => dispatch({
+            type: actions.FETCH_POSTS,
+            posts
+        }))
+);
 
-export const fetchPosts = (category) => (dispatch, getState) => {
-    if (getIsFetching(getState(), category)) {
-        return Promise.resolve();
-    }
-
-    dispatch({
-        type: 'FETCH_POSTS_REQUEST',
-        category
-    });
-
-    return ReadableAPI
-        .fetchPosts(category).then(
-        response => {
-            dispatch({
-                type: 'FETCH_POSTS_SUCCESS',
-                category,
-                response: normalize(response, schema.arrayOfPosts),
-            })
-        },
-        error => {
-            dispatch({
-                type: 'FETCH_POSTS_FAILURE',
-                category,
-                message: error.message || 'Something went wrong.'
-            })
-        }
-    );
-}
+// export const fetchPosts = (category) => (dispatch, getState) => {
+//     if (getIsFetching(getState(), category)) {
+//         return Promise.resolve();
+//     }
+//
+//     dispatch({
+//         type: 'FETCH_POSTS_REQUEST',
+//         category
+//     });
+//
+//     return ReadableAPI
+//         .fetchPosts(category).then(
+//         response => {
+//             dispatch({
+//                 type: 'FETCH_POSTS_SUCCESS',
+//                 category,
+//                 response: normalize(response, schema.arrayOfPosts),
+//             })
+//         },
+//         error => {
+//             dispatch({
+//                 type: 'FETCH_POSTS_FAILURE',
+//                 category,
+//                 message: error.message || 'Something went wrong.'
+//             })
+//         }
+//     );
+// }
 
 
 // FETCH_POST_COMMENTS

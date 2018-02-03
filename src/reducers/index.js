@@ -20,15 +20,15 @@ export default combineReducers({
 //     return getErrorMessage(state.listByFilter[filter]);
 // }
 
-export const getVisiblePosts = (state, filter) => {
-    const ids = fromPosts.getIds(state.listByFilter[filter]);
-    return ids.map(id => fromPosts.getPost(state, id));
-}
-
-export const getIsFetching = (state, filter) => {
-    return fromPosts.getIsFetching(state.listByFilter[filter]);
-}
-
-export const getErrorMessage = (state, filter) => {
-    return fromPosts.getErrorMessage(state.listByFilter[filter]);
-}
+// export const getVisiblePosts = (state, filter) => {
+//     const ids = fromPosts.getIds(state.listByFilter[filter]);
+//     return ids.map(id => fromPosts.getPost(state, id));
+// }
+//
+// export const getIsFetching = (state, filter) => {
+//     return fromPosts.getIsFetching(state.listByFilter[filter]);
+// }
+//
+// export const getErrorMessage = (state, filter) => {
+//     return fromPosts.getErrorMessage(state.listByFilter[filter]);
+// }

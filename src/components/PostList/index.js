@@ -24,24 +24,9 @@ class PostList extends Component {
     }
 
     render() {
-        // const { toggleTodo, isFetching, errorMessage, posts } = this.props;
-        const { isFetching, errorMessage, posts } = this.props;
+       return (
 
-        if (isFetching && !posts.length)
-            return <p>Loading...</p>;
-
-        if (errorMessage && !posts.length) {
-            return <FetchError
-                message={errorMessage}
-                onRetry={() => this.fetchData()}
-            />
-        }
-
-        return <PostItems
-            posts={posts}
-            // onTodoClick={toggleTodo}
-        />
-    }
+       )
 }
 
 const mapStateToProps = (state, { match: { params }}) => {
