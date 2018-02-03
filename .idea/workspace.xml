@@ -2,345 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b984a2cf-2a10-4bb4-9cae-01db26a48e0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/ActionTypes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/api/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/AddPost/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Header/FilterLink.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Header/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/PostDetails/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/PostEdit/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/PostList/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/configureStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/href-no-hash-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/href-no-hash.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/flow/eslint-jsx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/flow/eslint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/href-no-hash.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/accessible-emoji.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/alt-text.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/anchor-has-content.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/anchor-is-valid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/aria-activedescendant-has-tabindex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/aria-props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/aria-proptypes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/aria-role.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/aria-unsupported-elements.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/click-events-have-key-events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/heading-has-content.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/href-no-hash.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/html-has-lang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/iframe-has-title.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/img-redundant-alt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/interactive-supports-focus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/label-has-for.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/lang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/media-has-caption.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/mouse-events-have-key-events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-access-key.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-autofocus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-distracting-elements.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-interactive-element-to-noninteractive-role.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-noninteractive-element-interactions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-noninteractive-element-to-interactive-role.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-noninteractive-tabindex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-onchange.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-redundant-roles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/no-static-element-interactions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/role-has-required-aria-props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/role-supports-aria-props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/scope.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/rules/tabindex-no-positive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/attributes/ISO.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/attributesComparator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/getImplicitRole.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/getSuggestion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/getTabIndex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/hasAccessibleChild.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/area.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/article.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/aside.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/body.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/datalist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/details.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/dl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/h1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/h2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/h3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/h4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/h5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/h6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/img.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/input.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/li.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/link.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/menuitem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/meter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/nav.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/ol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/option.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/output.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/progress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/section.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/tbody.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/tfoot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/thead.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/implicitRoles/ul.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/isAbstractRole.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/isHiddenFromScreenReader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/isInteractiveElement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/isInteractiveRole.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/isNonInteractiveElement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/isNonInteractiveRole.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/isPresentationRole.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/src/util/schemas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/.babelrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/.eslintignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/helper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/elementType-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/eventHandlers-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/getProp-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/getPropLiteralValue-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/getPropValue-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/hasProp-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/index-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/__tests__/src/propName-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/elementType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/eventHandlers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/eventHandlersByType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/getLiteralPropValue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/getProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/getPropValue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/hasAnyProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/hasEveryProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/hasProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/elementType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/eventHandlers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/getProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/getPropValue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/hasProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/propName.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/JSXElement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/Literal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/ArrayExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/BinaryExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/BindExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/CallExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/ConditionalExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/FunctionExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/Identifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/LogicalExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/MemberExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/NewExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/ObjectExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/TaggedTemplateExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/TemplateLiteral.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/ThisExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/UnaryExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/UpdateExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/expressions/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/lib/values/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/propName.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/elementType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/eventHandlers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/getProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/getPropValue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/hasProp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/propName.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/JSXElement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/Literal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/ArrayExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/BinaryExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/BindExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/CallExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/ConditionalExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/FunctionExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/Identifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/LogicalExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/MemberExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/NewExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/ObjectExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/TaggedTemplateExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/TemplateLiteral.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/ThisExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/UnaryExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/UpdateExpression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/expressions/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/src/values/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/yarn.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/App.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/schema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/PostList/FetchError.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/PostList/Post.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/PostList/PostItems.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/categories.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/posts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-import/package.json" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-import/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/.npmignore" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/README.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__mocks__/genInteractives.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__mocks__/genInteractives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/__util__/parserOptionsMapper.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/__util__/parserOptionsMapper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/__util__/ruleOptionsMapperFactory.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/__util__/ruleOptionsMapperFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/anchor-is-valid-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/anchor-is-valid-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/aria-role-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/aria-role-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/aria-unsupported-elements-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/aria-unsupported-elements-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/click-events-have-key-events-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/click-events-have-key-events-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/interactive-supports-focus-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/interactive-supports-focus-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/label-has-for-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/label-has-for-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-autofocus-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-autofocus-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-interactive-element-to-noninteractive-role-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-interactive-element-to-noninteractive-role-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-noninteractive-element-interactions-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-noninteractive-element-interactions-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-noninteractive-element-to-interactive-role-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-noninteractive-element-to-interactive-role-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-static-element-interactions-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/no-static-element-interactions-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/role-has-required-aria-props-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/rules/role-has-required-aria-props-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/attributesComparator-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/attributesComparator-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/getTabIndex-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/getTabIndex-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/hasAccessibleChild-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/hasAccessibleChild-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isAbstractRole-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isAbstractRole-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isInteractiveElement-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isInteractiveElement-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isInteractiveRole-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isInteractiveRole-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isNonInteractiveElement-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isNonInteractiveElement-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isNonInteractiveRole-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/isNonInteractiveRole-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/schemas-test.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/__tests__/src/util/schemas-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/label-has-for.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/label-has-for.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/no-access-key.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/no-access-key.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/no-noninteractive-element-interactions.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/no-noninteractive-element-interactions.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/no-noninteractive-tabindex.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/docs/rules/no-noninteractive-tabindex.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/anchor-is-valid.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/anchor-is-valid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-proptypes.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-proptypes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-role.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-role.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-unsupported-elements.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/aria-unsupported-elements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/click-events-have-key-events.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/click-events-have-key-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/interactive-supports-focus.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/interactive-supports-focus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/label-has-for.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/label-has-for.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/mouse-events-have-key-events.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/mouse-events-have-key-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-interactive-element-to-noninteractive-role.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-interactive-element-to-noninteractive-role.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-noninteractive-element-interactions.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-noninteractive-element-interactions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-noninteractive-element-to-interactive-role.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-noninteractive-element-to-interactive-role.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-noninteractive-tabindex.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-noninteractive-tabindex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-static-element-interactions.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/no-static-element-interactions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/role-has-required-aria-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/role-has-required-aria-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/tabindex-no-positive.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/rules/tabindex-no-positive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/util/isInteractiveElement.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/lib/util/isInteractiveElement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/package.json" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/scripts/addRuleToIndex.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/scripts/addRuleToIndex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/scripts/create-rule.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-jsx-a11y/scripts/create-rule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/LICENSE" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/README.md" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/index.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/boolean-prop-naming.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/boolean-prop-naming.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/default-props-match-prop-types.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/default-props-match-prop-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/display-name.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/display-name.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-component-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-component-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-elements.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-elements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-foreign-prop-types.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-foreign-prop-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-prop-types.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/forbid-prop-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-boolean-value.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-boolean-value.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-closing-bracket-location.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-closing-bracket-location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-closing-tag-location.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-closing-tag-location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-curly-brace-presence.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-curly-brace-presence.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-curly-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-curly-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-equals-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-equals-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-filename-extension.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-filename-extension.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-first-prop-new-line.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-first-prop-new-line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-handler-names.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-handler-names.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-indent-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-indent-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-indent.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-indent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-key.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-max-props-per-line.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-max-props-per-line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-bind.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-bind.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-comment-textnodes.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-comment-textnodes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-duplicate-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-duplicate-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-literals.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-literals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-target-blank.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-target-blank.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-undef.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-no-undef.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-pascal-case.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-pascal-case.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-sort-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-sort-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-space-before-closing.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-space-before-closing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-tag-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-tag-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-uses-react.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-uses-react.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-uses-vars.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-uses-vars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-wrap-multilines.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/jsx-wrap-multilines.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-array-index-key.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-array-index-key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-children-prop.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-children-prop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-danger-with-children.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-danger-with-children.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-danger.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-danger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-deprecated.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-did-mount-set-state.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-did-mount-set-state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-did-update-set-state.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-did-update-set-state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-direct-mutation-state.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-direct-mutation-state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-find-dom-node.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-find-dom-node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-is-mounted.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-is-mounted.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-multi-comp.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-multi-comp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-redundant-should-component-update.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-redundant-should-component-update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-render-return-value.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-render-return-value.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-set-state.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-set-state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-string-refs.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-string-refs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-typos.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-typos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unescaped-entities.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unescaped-entities.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unknown-property.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unknown-property.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unused-prop-types.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unused-prop-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unused-state.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-unused-state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-will-update-set-state.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/no-will-update-set-state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/prefer-es6-class.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/prefer-es6-class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/prefer-stateless-function.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/prefer-stateless-function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/prop-types.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/prop-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/react-in-jsx-scope.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/react-in-jsx-scope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/require-default-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/require-default-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/require-optimization.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/require-optimization.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/require-render-return.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/require-render-return.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/self-closing-comp.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/self-closing-comp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/sort-comp.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/sort-comp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/sort-prop-types.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/sort-prop-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/style-prop-object.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/style-prop-object.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/void-dom-elements-no-children.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/rules/void-dom-elements-no-children.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/Components.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/Components.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/annotations.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/annotations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/getTokenBeforeClosingBracket.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/getTokenBeforeClosingBracket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/makeNoMethodSetStateRule.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/makeNoMethodSetStateRule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/pragma.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/pragma.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/variable.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/variable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/version.js" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/lib/util/version.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-react/package.json" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-react/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/README.md" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/helper.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/eventHandlers-test.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/eventHandlers-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/getPropLiteralValue-test.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/getPropLiteralValue-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/getPropValue-test.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/getPropValue-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/propName-test.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/__tests__/src/propName-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/lib/propName.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/lib/propName.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/lib/values/expressions/index.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/lib/values/expressions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/package.json" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/src/propName.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/src/propName.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/src/values/expressions/index.js" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/src/values/expressions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsx-ast-utils/yarn.lock" afterPath="$PROJECT_DIR$/node_modules/jsx-ast-utils/yarn.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/ActionTypes.js" afterPath="$PROJECT_DIR$/src/actions/ActionTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/index.js" afterPath="$PROJECT_DIR$/src/components/Header/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PostList/index.js" afterPath="$PROJECT_DIR$/src/components/PostList/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -353,134 +26,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5716198">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/PostDetails/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="11" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/PostEdit/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="8" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/PostList/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/AddPost/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Header/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1200">
-                  <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FilterLink.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Header/FilterLink.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="125">
-                  <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="125">
-                  <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="99">
-                  <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/PostList/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1225">
+              <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reducers/posts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -492,6 +85,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>1</find>
+      <find>fetchPost</find>
+      <find>getIsFetching</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -509,19 +104,30 @@
         <option value="$PROJECT_DIR$/src/configureStore.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
-        <option value="$PROJECT_DIR$/src/actions/ActionTypes.js" />
         <option value="$PROJECT_DIR$/src/api/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/reducers/categories/index.js" />
-        <option value="$PROJECT_DIR$/src/reducers/posts.js" />
         <option value="$PROJECT_DIR$/src/components/Header/FilterLink.js" />
-        <option value="$PROJECT_DIR$/src/components/Header/index.js" />
-        <option value="$PROJECT_DIR$/src/reducers/index.js" />
-        <option value="$PROJECT_DIR$/src/actions/index.js" />
         <option value="$PROJECT_DIR$/src/components/PostDetails/index.js" />
         <option value="$PROJECT_DIR$/src/components/AddPost/index.js" />
         <option value="$PROJECT_DIR$/src/components/PostEdit/index.js" />
+        <option value="$PROJECT_DIR$/src/components/PostList/PostItem.js" />
+        <option value="$PROJECT_DIR$/src/components/PostList/Post.js" />
+        <option value="$PROJECT_DIR$/src/actions/ActionTypes.js" />
+        <option value="$PROJECT_DIR$/src/actions/schema.js" />
+        <option value="$PROJECT_DIR$/src/reducers/posts/byId.js" />
+        <option value="$PROJECT_DIR$/src/components/PostList/FetchError.js" />
+        <option value="$PROJECT_DIR$/src/reducers/createList.js" />
+        <option value="$PROJECT_DIR$/src/reducers/byId.js" />
+        <option value="$PROJECT_DIR$/src/reducers/posts/index.js" />
+        <option value="$PROJECT_DIR$/src/components/PostList/PostItems.js" />
+        <option value="$PROJECT_DIR$/src/reducers/posts/createList.js" />
+        <option value="$PROJECT_DIR$/src/components/Header/index.js" />
+        <option value="$PROJECT_DIR$/src/reducers/categories.js" />
         <option value="$PROJECT_DIR$/src/components/PostList/index.js" />
+        <option value="$PROJECT_DIR$/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/reducers/posts.js" />
       </list>
     </option>
   </component>
@@ -534,10 +140,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="362" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="1318" />
+    <option name="width" value="840" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -646,11 +252,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/reducers" />
       <recent name="$PROJECT_DIR$/src/components/PostList" />
       <recent name="$PROJECT_DIR$/src/components/PostEdit" />
       <recent name="$PROJECT_DIR$/src/components/PostDetails" />
       <recent name="$PROJECT_DIR$/src/components/Header" />
-      <recent name="$PROJECT_DIR$/src/components/App" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -678,24 +284,25 @@
       <workItem from="1517588972623" duration="109000" />
       <workItem from="1517589522810" duration="102000" />
       <workItem from="1517589920971" duration="1240000" />
-      <workItem from="1517620695518" duration="5386000" />
+      <workItem from="1517620695518" duration="12802000" />
+      <workItem from="1517645355984" duration="125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6837000" />
+    <option name="totallyTimeSpent" value="14378000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="840" y="23" width="840" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11071429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17261904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -718,13 +325,48 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1975">
+          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="92" column="17" lean-forward="true" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,9 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,9 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,29 +395,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/index.js" />
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc" />
     <entry file="file://$PROJECT_DIR$/src/configureStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/ActionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,19 +411,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/posts.js">
+    <entry file="file://$PROJECT_DIR$/src/reducers/categories/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/AddPost/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/categories/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="275">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -813,16 +423,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostDetails/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/ActionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/createList.js" />
+    <entry file="file://$PROJECT_DIR$/src/reducers/byId.js" />
+    <entry file="file://$PROJECT_DIR$/src/reducers/posts/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/reducers/posts/byId.js" />
+    <entry file="file://$PROJECT_DIR$/src/reducers/posts/createList.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/PostEdit/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostList/FetchError.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostList/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostList/PostItems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/PostList/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="1225">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -831,68 +534,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="650">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="34" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AddPost/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostDetails/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostEdit/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="443">
+          <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>
