@@ -51,8 +51,8 @@ class Header extends Component {
     }
 }
 
-const mapStateToProps  = ({ categories }) => ({
-    categories,
+const mapStateToProps  = (state) => ({
+    categories: state.categories,
 })
 
 Header = withRouter(connect(
