@@ -7,15 +7,14 @@ class PostItemList extends Component {
     componentDidMount() {
         this.fetchPosts();
     }
-
+    // 여기에 match 어쩌고 써야 하는 것 같음 prams.category
     fetchPosts() {
-        const { fetchPosts, filter } = this.props;
-        fetchPosts(filter);
+        const { category, fetchPosts } = this.props;
+        fetchPosts(category);
     }
 
+
     render() {
-        const {posts, postsIds} =  this.props;
-        console.log(posts,postsIds)
         return (
 
             <div>TEST</div>
@@ -24,12 +23,21 @@ class PostItemList extends Component {
     }
 }
 
-function mapStateToProps(state){
-    return{
+// function mapStateToProps(state, { params }) {
+//     return{
+//         category: this.props.match.params.category,
+//         posts: state.posts,
+//         postsIds: state.postsIds
+//     }
+// }
+
+const mapStateToProps = (state) => {
+    return {
         posts: state.posts,
-        postsIds: state.postsIds
-    }
-}
+        postsIds: state.postsIds,
+        // todos: getVisibleTodos(state, filter),
+    };
+};
 
 PostItemList = withRouter(connect(
     mapStateToProps,
