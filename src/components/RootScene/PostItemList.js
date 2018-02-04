@@ -1,33 +1,12 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actions from '../../actions/categories';
+import React from 'react';
 
-class PostItemList extends Component {
+const PostItemList = () => {
 
-
-
-        render() {
-        const {posts, postsIds} =  this.props;
-        console.log(posts,postsIds)
-        return (
-
-            <div>TEST</div>
-
-        )
-    }
+    return (
+        <div>
+            PostItemList
+        </div>
+    );
 }
 
-function mapStateToProps(state){
-    return{
-        posts: state.posts,
-        postsIds: state.postsIds
-    }
-}
-
-PostItemList = withRouter(connect(
-    mapStateToProps,
-    actions
-)(PostItemList));
-
-export default PostItemList ;
+export default PostItemList;

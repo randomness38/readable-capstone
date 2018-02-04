@@ -18,6 +18,7 @@ export const loadPost = (post) => {
     }
 };
 
+
 export const addPost = (body) => dispatch => {
     return Api.addPost(body)
         .then(post => dispatch(loadPost(post)));
@@ -38,6 +39,13 @@ export const fetchPosts = () => dispatch => {
     Api.getPosts()
         .then(posts => dispatch(loadPosts(posts)));
 };
+
+export const fetchPostsByCategory = (category) => dispatch => {
+    Api.getCategoryPosts(category)
+        .then(posts => dispatch(loadPosts(posts)))
+}
+
+
 
 export const deletePost = (id) => {
     return {

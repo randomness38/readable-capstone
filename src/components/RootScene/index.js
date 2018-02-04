@@ -3,118 +3,112 @@
  */
 import React, {Component} from 'react';
 import {connect} from "react-redux";
+import { withRouter } from 'react-router';
 // import {Link} from "react-router-dom";
-// import SortBy from 'sort-by';
-
+import SortBy from 'sort-by';
+import {fetchPosts} from "../../actions/posts";
 import AppHeader from './AppHeader'
-// import PostItemList from "./PostItemList";
-
+import PostItemList from "./PostItemList";
+import {fetchPostsByCategory} from "../../actions/posts";
 
 
 class RootScene extends Component {
 
-    // state = {
-    //     sortBy: '-voteScore'
-    // };
-    //
-    // sortBy = (value) => {
-    //     this.setState({sortBy: value});
-    // };
+
+    // 다 좋은데. 쌓여...stack 처럼..시발...
+    // 아이디 삭제해야 하느느듯
+
+    componentDidMount() {
+        this.fetchData();
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.categoryName !== prevProps.categoryName) {
+            this.fetchData();
+        }
+    }
+
+    fetchData() {
+        const { categoryName, fetchPostsByCategory } = this.props;
+        console.log(categoryName)
+        fetchPostsByCategory(categoryName);
+    }
+
+
+
+    state = {
+        sortBy: '-voteScore',
+    };
+
+    sortBy = (value) => {
+        this.setState({sortBy: value});
+    };
+
 
     render() {
+        const {posts, postsIds, categoryName} =  this.props;
+        let postsToRender, filteredPosts;
 
-        // const {posts, match} = this.props;
-        // const {params} = match;
-        // const {categoryName} = params;
+        if(categoryName === 'all'){
+            filteredPosts = postsIds.map( postId => posts[postId] )
+        } else {
+            const idsFromCurrentCategory = postsIds.filter( postId => posts[postId].category === categoryName );
+            filteredPosts = idsFromCurrentCategory.map( postId => posts[postId] );
+        }
+
+        postsToRender = filteredPosts.filter( post => !post.deleted );
+        postsToRender.sort(SortBy(this.state.sortBy));
+
+        // this.setState({filteredPosts: postsToRender});
+        // console.log(postsToRender)
 
         return (
             <div>
-                <p> TESTING </p>
+                <div>
+                    <span>Order by </span>
+                    <select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>
+                        <option value="-voteScore">Best score</option>
+                        <option value="-timestamp">Most recent</option>
+                    </select>
+                </div>
+
+
                 <AppHeader />
+                <PostItemList />
+                <p> ROOT SCENE </p>
             </div>
 
 
-            // <main>
-            //
-            //     <div className="container">
-            //
-            //         <div className="row section">
-            //
-            //             <div className="col s12 m9 l10">
-            //
-            //                 <div className="row">
-            //
-            //                     <div className="col s8">
-            //
-            //                         <Link
-            //                             to={'/add/post'}
-            //                             className="btn blue"
-            //                         >
-            //                             <i className="material-icons left">add</i> Add Post
-            //                         </Link>
-            //
-            //                     </div>
-            //
-            //                     <div className="col s4 right-align">
-            //                         <span>Order by </span>
-            //                         <select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>
-            //                             <option value="-voteScore">Best score</option>
-            //                             <option value="-timestamp">Most recent</option>
-            //                         </select>
-            //                     </div>
-            //
-            //                 </div>
-            //
-            //                 <div className="row">
-            //                     <div className="col s12">
-            //
-            //                         {posts
-            //                             .filter(post => !post.deleted)
-            //                             .filter(post => post.category === categoryName || !categoryName)
-            //                             .sort(SortBy(this.state.sortBy))
-            //                             .map(post =>
-            //                                 <Post
-            //                                     key={post.id}
-            //                                     id={post.id}
-            //                                     title={post.title}
-            //                                     author={post.author}
-            //                                     body={post.body}
-            //                                     category={post.category}
-            //                                     timestamp={post.timestamp}
-            //                                     voteScore={post.voteScore}
-            //                                 />
-            //                             )}
-            //
-            //                     </div>
-            //                 </div>
-            //
-            //             </div>
-            //
-            //             <div className="col hide-on-small-only m3 l2">
-            //                 <div className="toc-wrapper pinned">
-            //
-            //                     <h5>Categories</h5>
-            //
-            //                     <CategoryList currentCategory={categoryName}/>
-            //
-            //                 </div>
-            //             </div>
-            //
-            //         </div>
-            //
-            //     </div>
-            //
-            // </main>
 
         );
 
     }
 }
 
-function mapStateToProps({posts}) {
+function mapStateToProps(state, ownProps) {
+    // const match = this.props;
+    // const {params} = match;
+    // const {categoryName} = params;
+    // console.log(params.categoryName);
+    // const categoryName = params.categoryName || 'all';
     return {
-        posts: posts.ids.map(id => posts.entities[id])
+        categoryName: ownProps.match.params.categoryName,
+        // posts: posts.ids.map(id => posts.entities[id]),
+        categories: state.categories.entities,
+        categoriesIds: state.categories.ids,
+        posts: state.posts.entities,
+        postsIds: state.posts.ids,
     }
 }
+//
+// RootScene = withRouter(connect(mapStateToProps)(RootScene));
+//
+// export default RootScene;
 
-export default connect(mapStateToProps)(RootScene);
+RootScene = withRouter(connect(
+    mapStateToProps, { fetchPostsByCategory }
+)(RootScene));
+
+export default RootScene;
+
+// export default connect(mapStateToProps)(RootScene);
