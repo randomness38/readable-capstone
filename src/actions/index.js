@@ -96,12 +96,12 @@ export const removePost = ( post ) => dispatch => (
         }))
 );
 
-// FETCH_POST_COMMENTS_SUCCESS
+// FETCH_POSTS
 export const fetchPosts = (filter) => dispatch => (
     ReadableAPI
         .fetchPosts(filter)
         .then(posts => dispatch({
-            type: action.FETCH_FILTER_POSTS,
+            type: action.FETCH_POSTS,
             posts
         }))
 );

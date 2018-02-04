@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
+import React from 'react';
 
+<<<<<<< HEAD
 class PostItemList extends Component {
     componentDidMount() {
         this.fetchPosts();
@@ -45,3 +43,15 @@ PostItemList = withRouter(connect(
 )(PostItemList));
 
 export default PostItemList ;
+=======
+const PostList = () => {
+
+    return (
+        <div>
+            PostList
+        </div>
+    );
+}
+
+export default PostList;
+>>>>>>> parent of b96505f0... posts, postIds state set

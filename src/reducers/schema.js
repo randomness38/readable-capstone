@@ -5,5 +5,5 @@ export const category = new schema.Entity('categories');
 export const comment = new schema.Entity('comments');
 
 export const arrayOfPosts = new schema.Array(post);
-export const arrayOfCategories = {categories: [category]};
-export const arrayOfComments = new schema.Array(comment);
+export const arrayOfCategory = new schema.Array(category);
+export const arrayOfComment = new schema.Array(comment);

@@ -17,28 +17,11 @@ class App extends Component {
                 {/*</Switch>*/}
                 <Header />
                 <Switch>
-                    <Route exact path='/'
-                           render={ () => ( <PostItemList category='all'/> )}
-                    />
+                    <Route exact path='/' component={PostItemList} />
                     <Route exact path="/new" component={AddPost} />
                     <Route exact path="/edit/:id" component={EditPost} />
-                    <Route exact path="/:category"
-                           render={({match}) => (
-                               // 여기서 category 받아서
-                               // <Link to={`${post.category}/${post.id}`}> {post.title} </Link> 이거씀
-                               <PostItemList
-                                   category={ match.params.category}
-                               />
-                           )}
-                    />
-                    <Route exact path="/:category/:id"
-                           render={({match}) => (
-                               <PostDetails
-                                   category={ match.params.category}
-                                   postId={ match.params.id}
-                               />
-                           )}
-                    />
+                    <Route exact path="/:category" component={PostItemList} />
+                    <Route exact path="/:category/:id" component={PostDetails} />
                 </Switch>
             </div>
         );
