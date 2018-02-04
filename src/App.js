@@ -3,7 +3,7 @@
 // import EditPostScene from './components/EditPostScene';
 // import PostItemList from './components/PostItemList';
 // import PostDetailScene from './components/PostDetailScene';
-// import CategoriesScene from './components/CategoriesScene';
+// import RootScene from './components/RootScene';
 // import AddPostScene from './components/AddPostScene';
 //
 // class App extends Component {
@@ -18,7 +18,7 @@
 //                 <EditPostScene />
 //                 <Switch>
 //                     <Route exact path='/' component={PostItemList} />
-//                     <Route exact path="/new" component={CategoriesScene} />
+//                     <Route exact path="/new" component={RootScene} />
 //                     <Route exact path="/edit/:id" component={AddPostScene} />
 //                     <Route exact path="/:category" component={PostItemList} />
 //                     <Route exact path="/:category/:id" component={PostDetailScene} />
@@ -33,12 +33,12 @@
 //new ver
 
 import React, {Component} from 'react';
-import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 
 
-import CategoriesScene from './components/CategoriesScene';
+import RootScene from './components/RootScene';
 import AddPostScene from "./components/AddPostScene";
 import EditPostScene from "./components/EditPostScene";
 import PostDetailScene from "./components/PostDetailScene";
@@ -61,26 +61,9 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div>
-
-                    <header>
-                        <div>
-                            <nav>
-                                <div>
-                                    <div>
-
-                                        <Link to="/" >
-                                            Readable
-                                        </Link>
-
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </header>
-
                     <Switch>
-                        <Route exact path="/" component={CategoriesScene}/>
-                        <Route exact path="/category/:categoryName" component={CategoriesScene}/>
+                        <Route exact path="/" component={RootScene}/>
+                        <Route exact path="/category/:categoryName" component={RootScene}/>
                         <Route exact path="/add/post" component={AddPostScene}/>
                         <Route exact path="/edit/post/:idPost" component={EditPostScene}/>
                         <Route exact path="/:category/:idPost" component={PostDetailScene}/>
@@ -102,5 +85,7 @@ class App extends Component {
     }
 
 }
+
+
 
 export default connect()(App);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostEdit = () => {
+const AddPostScene = () => {
 
     return (
         <div>
@@ -9,4 +9,4 @@ const PostEdit = () => {
     );
 }
 
-export default PostEdit;
+export default AddPostScene;
