@@ -7,7 +7,7 @@ const FilterNaveLink = ({
                     }) => (
     <NavLink
         exact
-        to={`/${filter === 'all' ? '' : filter}`}
+        to={`/${filter}`}
         activeStyle={{
             textDecoration: 'none',
             color: 'black',

@@ -30,7 +30,6 @@ class Header extends Component {
 
     render() {
         const {categoriesIds, categories} =  this.props;
-        console.log(categories)
         return (
             <div>
                 <Link
