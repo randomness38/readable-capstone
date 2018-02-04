@@ -1,18 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
-<<<<<<< HEAD
 class PostItemList extends Component {
+
     componentDidMount() {
-        this.fetchPosts();
-    }
-    // 여기에 match 어쩌고 써야 하는 것 같음 prams.category
-    fetchPosts() {
-        const { category, fetchPosts } = this.props;
-        fetchPosts(category);
+        this.fetchData();
     }
 
+    // componentWillReceiveProps(nextProps) {
+    //     if( nextProps.match.params.category !== this.props.match.params.category ) {
+    //         const filter = nextProps.match.params.category || false;
+    //         this.fetchData(filter);
+    //     }
+    // }
+
+    fetchData() {
+        const { fetchPosts } = this.props;
+        const filter = this.props.match.params.category || false;
+        fetchPosts(filter)
+    }
+
+
+
+
+    // componentDidMount() {
+    //     this.fetchPosts();
+    // }
+    //
+    // fetchPosts() {
+    //     const { fetchPosts, filter } = this.props;
+    //     fetchPosts(filter);
+    // }
 
     render() {
+        const {posts, postsIds} =  this.props;
+        console.log(posts,postsIds)
         return (
 
             <div>TEST</div>
@@ -21,21 +45,12 @@ class PostItemList extends Component {
     }
 }
 
-// function mapStateToProps(state, { params }) {
-//     return{
-//         category: this.props.match.params.category,
-//         posts: state.posts,
-//         postsIds: state.postsIds
-//     }
-// }
-
-const mapStateToProps = (state) => {
-    return {
+function mapStateToProps(state){
+    return{
         posts: state.posts,
-        postsIds: state.postsIds,
-        // todos: getVisibleTodos(state, filter),
-    };
-};
+        postsIds: state.postsIds
+    }
+}
 
 PostItemList = withRouter(connect(
     mapStateToProps,
@@ -43,15 +58,3 @@ PostItemList = withRouter(connect(
 )(PostItemList));
 
 export default PostItemList ;
-=======
-const PostList = () => {
-
-    return (
-        <div>
-            PostList
-        </div>
-    );
-}
-
-export default PostList;
->>>>>>> parent of b96505f0... posts, postIds state set

@@ -101,7 +101,7 @@ export const fetchPosts = (filter) => dispatch => (
     ReadableAPI
         .fetchPosts(filter)
         .then(posts => dispatch({
-            type: action.FETCH_POSTS,
+            type: action.FETCH_FILTER_POSTS,
             posts
         }))
 );
