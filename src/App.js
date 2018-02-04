@@ -30,7 +30,7 @@ class App extends Component {
                             exact path='/'
                             render={ () => (
                                 <RootScene
-                                    category='all'
+                                    render={({match}) => ( <RootScene categoryName='all'/>)}
                                 />
                             )}
                         />

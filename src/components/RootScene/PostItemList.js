@@ -1,10 +1,9 @@
 import React from 'react';
 
-const PostItemList = () => {
-
+const PostItemList = ({ post }) => {
     return (
         <div>
-            PostItemList
+            {post.id}
         </div>
     );
 }

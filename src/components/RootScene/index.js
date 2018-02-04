@@ -1,22 +1,14 @@
-/**
- * Created by greg on 03/09/17.
- */
+
 import React, {Component} from 'react';
 import {connect} from "react-redux";
 import { withRouter } from 'react-router';
-// import {Link} from "react-router-dom";
 import SortBy from 'sort-by';
-import {fetchPosts} from "../../actions/posts";
 import AppHeader from './AppHeader'
-import PostItemList from "./PostItemList";
+import PostItem from "../Forms/PostItem";
 import {fetchPostsByCategory} from "../../actions/posts";
 
 
 class RootScene extends Component {
-
-
-    // 다 좋은데. 쌓여...stack 처럼..시발...
-    // 아이디 삭제해야 하느느듯
 
     componentDidMount() {
         this.fetchData();
@@ -38,6 +30,7 @@ class RootScene extends Component {
 
     state = {
         sortBy: '-voteScore',
+        filteredPosts:[]
     };
 
     sortBy = (value) => {
@@ -48,7 +41,7 @@ class RootScene extends Component {
     render() {
         const {posts, postsIds, categoryName} =  this.props;
         let postsToRender, filteredPosts;
-
+        // 여기가 안먹힘 지금 categoryName이 all이 안떠
         if(categoryName === 'all'){
             filteredPosts = postsIds.map( postId => posts[postId] )
         } else {
@@ -57,7 +50,8 @@ class RootScene extends Component {
         }
 
         postsToRender = filteredPosts.filter( post => !post.deleted );
-        postsToRender.sort(SortBy(this.state.sortBy));
+        postsToRender.sort(SortBy(this.state.sortBy))
+
 
         // this.setState({filteredPosts: postsToRender});
         // console.log(postsToRender)
@@ -74,7 +68,11 @@ class RootScene extends Component {
 
 
                 <AppHeader />
-                <PostItemList />
+                {
+                postsToRender.map(post => (
+                    <PostItem key={`${post.id}-${post.category}${categoryName}_view`} post={post}/>
+                ))
+                }
                 <p> ROOT SCENE </p>
             </div>
 
@@ -92,7 +90,7 @@ function mapStateToProps(state, ownProps) {
     // console.log(params.categoryName);
     // const categoryName = params.categoryName || 'all';
     return {
-        categoryName: ownProps.match.params.categoryName,
+        categoryName: ownProps.match.params.categoryName || 'all',
         // posts: posts.ids.map(id => posts.entities[id]),
         categories: state.categories.entities,
         categoriesIds: state.categories.ids,
