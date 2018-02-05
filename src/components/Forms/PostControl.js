@@ -8,9 +8,9 @@ class PostControl extends Component {
 
     render () {
 
-        const { post, onDeletePost, onSndVote } = this.props;
+        const { post, onDeletePost, onSendVote, onBack } = this.props;
         // const { post } = this.props;
-        // console.log(post.id)
+        // console.log(post)
 
         return (
             <div>
@@ -19,7 +19,7 @@ class PostControl extends Component {
                     <div>
                         <i onClick={(e) => {
                             e.preventDefault();
-                            onSndVote(post.id,"upVote")
+                            onSendVote(post.id,"upVote")
                         }}
                           >   UP  </i>
 
@@ -27,7 +27,8 @@ class PostControl extends Component {
 
                         <i onClick={(e) => {
                             e.preventDefault();
-                            onSndVote(post.id,"downVote")
+                            onSendVote(post.id,"downVote")
+
                         }}
                         >   DOWN  </i>
 
@@ -39,9 +40,9 @@ class PostControl extends Component {
 
                     <button
                         onClick={ e => {
-                            // 이거 안하면 post 싹다 삭제 됨!
                             e.preventDefault();
                             onDeletePost(post.id)
+                            if (onBack) onBack()
                         }}
 
                     >Delete Button</button>

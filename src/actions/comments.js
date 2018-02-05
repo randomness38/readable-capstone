@@ -33,7 +33,7 @@ export const editComment = (body, id) => dispatch => {
         .then(comment => dispatch(loadComment(comment)));
 };
 
-export const sendVote = (id, vote) => dispatch => {
+export const sendCommentVote = (id, vote) => dispatch => {
     Api.vote(id, vote)
         .then(comment => dispatch(loadComment(comment)));
 };
