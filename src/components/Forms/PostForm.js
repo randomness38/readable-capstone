@@ -53,10 +53,7 @@ class PostForm extends Component {
         this.setState({[e.target.name]: e.target.value})
     }
     render () {
-        const { onFormSubmit, formHeaderTitle, categories, categoriesIds  } = this.props;
-        console.log(categories)
-        console.log(categoriesIds)
-
+        const { onFormSubmit, formHeaderTitle, categories, categoryIds  } = this.props;
 
         return (
             <form className="PostForm" onSubmit={ onFormSubmit }>
@@ -103,13 +100,13 @@ class PostForm extends Component {
                         <label>Select Category</label>
                         <div className="btn-toolbar">
                             <div className="btn-group" data-toggle="buttons">
-                                { categories!== undefined && categoriesIds.map( Id => (
+                                { categories!== undefined && categoryIds.map( Id => (
                                     <label
                                         key={categories[Id].path}
                                         onClick={this.selectCategory}
-                                        className={ "btn btn-secondary" + ( this.state.category === categories[Id].name ? " active" : "")}
+                                        // className={ "btn btn-secondary" + ( this.state.category === categories[Id].name ? " active" : "")}
                                     >
-                                        <input type="radio" name="category" value={categories[Id]} /> {categories[Id].name}
+                                        <input type="radio" name="category" value={categories[Id].name} /> {categories[Id].name}
                                     </label>
                                 ))}
                             </div>
@@ -131,7 +128,7 @@ class PostForm extends Component {
 
 const mapStateToProps  = ({ categories }) => ({
     categories: categories.entities,
-    categoriesIds: categories.ids
+    categoryIds: categories.ids
 });
 
 export default withRouter(connect(mapStateToProps)(PostForm));

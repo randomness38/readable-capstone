@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FormSerialize from 'form-serialize';
+// import { fromNow, dateTimeFormat } from '../Forms/Setdate';
 import { editPost, fetchPosts } from '../../actions/posts';
 import PostForm from '../Forms/PostForm'
 
@@ -21,7 +22,8 @@ class EditPostScene extends Component {
         const serializedPost = FormSerialize(event.target, {hash: true});
         const post = {
             ...this.props.post,
-            ...serializedPost
+            ...serializedPost,
+            // timestamp:Date.now()
         }
         this.props.editPost( post ).then( ({ p }) => {
             this.props.history.push(`/${post.category}/${post.id}`);
@@ -36,7 +38,9 @@ class EditPostScene extends Component {
         return (
             <div className="PostEdit container">
                 <div className="card">
+
                     { post && post.title && (
+
                         <PostForm
                             formHeaderTitle="Edit Post"
                             post={post}

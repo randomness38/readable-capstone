@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FormSerialize from 'form-serialize';
 import uuid from 'uuid'
-
 import { addPost } from '../../actions/posts';
 import PostForm from '../Forms/PostForm'
 
