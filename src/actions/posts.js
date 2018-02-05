@@ -56,6 +56,12 @@ export const fetchPosts = () => dispatch => {
         .then(posts => dispatch(loadPosts(posts)));
 };
 
+export const fetchPost = (id) => dispatch => {
+    Api.fetchPost()
+        .then(post => dispatch(loadPost(post)))
+}
+
+
 export const fetchPostsByCategory = (category) => dispatch => {
     Api.getCategoryPosts(category)
         .then(posts => dispatch(loadPosts(posts)))

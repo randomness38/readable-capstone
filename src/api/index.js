@@ -39,7 +39,11 @@ export function getPosts() {
         .then((res) => res.json());
 
 }
-
+// 이거 추가했음 (0205 17:00)
+export const fetchPost = id =>
+    fetch(`${ENV.api_url}/posts/${id}`, {headers: ENV.headers})
+        .then(res => res.json())
+        .then(data => data);
 
 // 얘는 works. comment/ post 동시에 쓸 수 있는 action creator 만드는
 export function vote(id, vote) {

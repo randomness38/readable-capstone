@@ -1,8 +1,8 @@
 // component 일 필요 없는데?
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {deletePost} from '../../actions/posts';
-import * as api from "../../api";
+// import {deletePost} from '../../actions/posts';
+// import * as api from "../../api";
 
 class PostControl extends Component {
 
