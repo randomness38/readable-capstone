@@ -8,6 +8,7 @@
     "axios": "^0.17.1",
     "bootstrap": "^3.3.7",
     "eslint": "^4.16.0",
+    "form-serialize": "^0.7.2",
     "history": "^4.7.2",
     "moment": "^2.20.1",
     "normalizr": "^3.2.4",

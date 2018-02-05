@@ -1,5 +1,5 @@
 import * as Api from "../api";
-
+import uuid from 'uuid';
 export const LOAD_POSTS = '[Post] Load posts';
 export const LOAD_POST = '[Post] Vote';
 export const DELETE_POST = '[Post] Delete post';
@@ -26,10 +26,16 @@ export const loadPost = (post) => {
 //     }
 // };
 
-
+// 문법 맞나 모르거따
 export const addPost = (body) => dispatch => {
+    const postId = uuid();
     return Api.addPost(body)
-        .then(post => dispatch(loadPost(post)));
+        .then(post => dispatch({
+            type: LOAD_POST,
+            ...post,
+            id: postId,
+            timestamp:Date.now()
+        }));
 };
 
 export const editPost = (body) => dispatch => {

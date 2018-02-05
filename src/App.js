@@ -43,6 +43,11 @@ class App extends Component {
                         <Route exact path="/add/post" component={AddPostScene}/>
                         <Route exact path="/edit/post/:idPost" component={EditPostScene}/>
                         <Route
+                            key={'edit-post'}
+                            exact path='/edit/post/:idPost'
+                            render={({match}) => ( <EditPostScene idPost={ match.params.idPost}/>)}
+                        />
+                        <Route
                             key='category-post-details-route'
                             exact path={`/:category/:idPost`}
                             render={({match}) => (
