@@ -23,7 +23,7 @@ class EditPostScene extends Component {
             ...this.props.post,
             ...serializedPost
         }
-        this.props.updatePost( post ).then( ({ p }) => {
+        this.props.editPost( post ).then( ({ p }) => {
             this.props.history.push(`/${post.category}/${post.id}`);
         });
     }

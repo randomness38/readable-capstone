@@ -28,13 +28,13 @@ export const loadPost = (post) => {
 
 // 문법 맞나 모르거따
 export const addPost = (body) => dispatch => {
-    const postId = uuid();
+    // const postId = uuid();
     return Api.addPost(body)
         .then(post => dispatch({
             type: LOAD_POST,
-            ...post,
-            id: postId,
-            timestamp:Date.now()
+            post,
+            // id: postId,
+            // timestamp:Date.now()
         }));
 };
 
@@ -55,12 +55,6 @@ export const fetchPosts = () => dispatch => {
     Api.getPosts()
         .then(posts => dispatch(loadPosts(posts)));
 };
-
-export const fetchPost = (id) => dispatch => {
-    Api.fetchPost()
-        .then(post => dispatch(loadPost(post)))
-}
-
 
 export const fetchPostsByCategory = (category) => dispatch => {
     Api.getCategoryPosts(category)
