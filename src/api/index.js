@@ -39,13 +39,8 @@ export function getPosts() {
         .then((res) => res.json());
 
 }
-// 이거 추가했음 (0205 17:00)
-export const fetchPost = id =>
-    fetch(`${ENV.api_url}/posts/${id}`, {headers: ENV.headers})
-        .then(res => res.json())
-        .then(data => data);
 
-// 얘는 works. comment/ post 동시에 쓸 수 있는 action creator 만드는
+
 export function vote(id, vote) {
 
     return fetch(`${ENV.api_url}/posts/${id}`,
@@ -58,31 +53,6 @@ export function vote(id, vote) {
         .then((res) => res.json());
 
 }
-//
-// export function vote(id, option, type) {
-//     const postData = { id: id, option: option };
-//     return fetch(`${ENV.api_url}/${type}/${id}`,
-//         {
-//             headers: ENV.headers,
-//             method: 'POST',
-//             body: JSON.stringify(postData)
-//         }
-//     )
-//         .then((res) => res.json())
-//         .then(data => data);
-// }
-
-// export const vote = (id, option, type) => {
-//     const postData = { id: id, option: option };
-//     const url = `${apiUrl}/${type}/${id}`;
-//     return fetch(url, {
-//         method: "POST",
-//         body: JSON.stringify(postData),
-//         headers
-//     })
-//         .then(res => res.json())
-//         .then(data => data);
-// }
 
 
 

@@ -62,18 +62,17 @@ export const fetchPostsByCategory = (category) => dispatch => {
 
 
 
-//
-export const deletePost = (id) => {
+export const removePost = (id) => {
     return {
         type: DELETE_POST,
         id
     }
 };
 
-// export const deletePost = (id) => dispatch => {
-//     Api.deletePost(id)
-//         .then(() => dispatch(removePost(id)))
-// }
+export const deletePost = (id) => dispatch => {
+    Api.deletePost(id)
+        .then(() => dispatch(removePost(id)))
+}
 
 //
 // export const deletePost = ( id ) => dispatch => (

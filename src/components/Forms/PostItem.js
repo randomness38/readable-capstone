@@ -33,6 +33,7 @@ class PostItem extends Component {
                         onSendVote={sendPostVote}
                     />
                 </div>
+
             </div>
         );
     }

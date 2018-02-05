@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
+import { Link } from 'react-router-dom';
 import CommentItem from './CommentItem';
 import PostControl from '../Forms/PostControl';
 import { fromNow, dateTimeFormat } from '../Forms/Setdate';
@@ -71,7 +72,9 @@ class PostDetailScene extends Component {
                         </div>
                     </div>
                 )}
-
+                <Link
+                    to='/'
+                >Main</Link>
             </div>
         );
     }
