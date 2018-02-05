@@ -54,7 +54,7 @@ class RootScene extends Component {
 
 
         // this.setState({filteredPosts: postsToRender});
-        // console.log(postsToRender)
+        console.log(postsToRender)
 
         return (
             <div>

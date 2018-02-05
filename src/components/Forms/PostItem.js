@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
-import ControlBoard from './ControlBoard';
+import PostControl from './PostControl';
 import { fromNow } from './Setdate';
+import {sendVote, deletePost} from "../../actions/posts";
 
 class PostItem extends Component {
     render () {
 
-        const { post } = this.props;
+        const { post, sendVote, deletePost } = this.props;
 
         return (
             <div>
                 <div>
                     <h6>{post.category}</h6>
+
                     <Link to={`/${post.category}/${post.id}`}>
                         <h4>{post.title}</h4>
                     </Link>
@@ -20,11 +23,19 @@ class PostItem extends Component {
                     </footer>
                 </div>
                 <div>
-                    {/*<ControlBoard post={post} />*/}
+                    <p>{post.commentCount === 0? 'Looking for Your Comment!':`${post.commentCount} comments!`}</p>
+                </div>
+                <div>
+                    <PostControl
+                        post={post}
+                        onSendVote={sendVote}
+                        onDeletePost={deletePost}
+                    />
                 </div>
             </div>
         );
     }
 }
 
-export default PostItem;
+
+export default connect(null, { sendVote, deletePost })(PostItem);

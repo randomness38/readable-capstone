@@ -19,6 +19,14 @@ export const loadPost = (post) => {
 };
 
 
+// export const removePost = (id) => {
+//     return {
+//         type: DELETE_POST,
+//         id
+//     }
+// };
+
+
 export const addPost = (body) => dispatch => {
     return Api.addPost(body)
         .then(post => dispatch(loadPost(post)));
@@ -35,6 +43,8 @@ export const sendVote = (id, vote) => dispatch => {
         .then(post => dispatch(loadPost(post)))
 };
 
+
+
 export const fetchPosts = () => dispatch => {
     Api.getPosts()
         .then(posts => dispatch(loadPosts(posts)));
@@ -47,9 +57,18 @@ export const fetchPostsByCategory = (category) => dispatch => {
 
 
 
-export const deletePost = (id) => {
-    return {
+//
+// export const deletePost = (id) => dispatch => {
+//     Api.deletePost(id)
+//         .then(id => dispatch(removePost(id)))
+// }
+
+
+export const deletePost = ( id ) => dispatch => (
+    Api
+    .deletePost( id )
+    .then(dispatch({
         type: DELETE_POST,
         id
-    }
-};
+    }))
+);
