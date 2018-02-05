@@ -29,7 +29,7 @@ class PostItem extends Component {
                 <div>
                     <PostControl
                         post={post}
-                        onDeletePost={deletePost}
+                        onDelete={deletePost}
                         onSendVote={sendPostVote}
                     />
                 </div>

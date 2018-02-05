@@ -1,17 +1,16 @@
 // component 일 필요 없는데?
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import {deletePost} from '../../actions/posts';
-// import * as api from "../../api";
+
 
 class PostControl extends Component {
 
     render () {
 
-        const { post, onDeletePost, onSendVote, onBack } = this.props;
+        const { post, onDelete, onSendVote, onBack } = this.props;
         // const { post } = this.props;
         // console.log(post)
-
+        console.log(post)
         return (
             <div>
                 <div>
@@ -41,7 +40,7 @@ class PostControl extends Component {
                     <button
                         onClick={ e => {
                             e.preventDefault();
-                            onDeletePost(post.id)
+                            onDelete(post.id)
                             if (onBack) onBack()
                         }}
 

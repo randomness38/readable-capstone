@@ -37,6 +37,7 @@ class PostDetailScene extends Component {
                     <div>
                         <div>
                             <div>
+                                <h5>{post.category}</h5>
                                 <h6>{post.author}</h6>
                                 {/*왜 category를 못가져오지??*/}
                                 {/*<h6 className="mb-0">{post.category}</h6>*/}
@@ -50,7 +51,7 @@ class PostDetailScene extends Component {
                         <div>
                             <PostControl
                                 post={post}
-                                onDeletePost={deletePost}
+                                onDelete={deletePost}
                                 onSendVote={sendPostVote}
                                 onBack={this.windowBack}/>
                         </div>

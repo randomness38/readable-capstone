@@ -33,14 +33,26 @@ export const editComment = (body, id) => dispatch => {
         .then(comment => dispatch(loadComment(comment)));
 };
 
+// export const sendCommentVote = (id, vote) => dispatch => {
+//     Api.vote(id, vote)
+//         .then(comment => dispatch(loadComment(comment)));
+// };
+
 export const sendCommentVote = (id, vote) => dispatch => {
     Api.vote(id, vote)
-        .then(comment => dispatch(loadComment(comment)));
+        .then(comment => dispatch(loadComment(comment)))
 };
 
-export const deleteComment = (id) => {
+
+
+export const removeComment = (id) => {
     return {
         type: DELETE_COMMENT,
         id
     }
 };
+
+export const deleteComment = (id) => dispatch => {
+    Api.deleteComment(id)
+        .then(() => dispatch(removeComment(id)))
+}
