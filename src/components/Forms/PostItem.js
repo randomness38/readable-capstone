@@ -8,7 +8,7 @@ import {deletePost, sendVote} from "../../actions/posts";
 class PostItem extends Component {
     render () {
 
-        const { post, sendVote, deletePost} = this.props;
+        const { post } = this.props;
 
         return (
             <div>

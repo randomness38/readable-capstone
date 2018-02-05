@@ -10,7 +10,7 @@ class PostControl extends Component {
 
         const { post, onDeletePost, onSndVote } = this.props;
         // const { post } = this.props;
-        console.log(post.id)
+        // console.log(post.id)
 
         return (
             <div>

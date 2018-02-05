@@ -1,5 +1,4 @@
 import * as Api from "../api";
-import uuid from 'uuid';
 export const LOAD_POSTS = '[Post] Load posts';
 export const LOAD_POST = '[Post] Vote';
 export const DELETE_POST = '[Post] Delete post';

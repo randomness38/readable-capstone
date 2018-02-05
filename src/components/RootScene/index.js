@@ -22,7 +22,7 @@ class RootScene extends Component {
 
     fetchData() {
         const { categoryName, fetchPostsByCategory } = this.props;
-        console.log(categoryName)
+        // console.log(categoryName)
         fetchPostsByCategory(categoryName);
     }
 
@@ -54,7 +54,7 @@ class RootScene extends Component {
 
 
         // this.setState({filteredPosts: postsToRender});
-        console.log(postsToRender)
+        // console.log(postsToRender)
 
         return (
             <div>
