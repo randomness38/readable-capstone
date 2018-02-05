@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import {connect} from "react-redux";
 import { Link } from 'react-router-dom';
 import PostControl from './PostControl';
 import { fromNow } from './Setdate';
-import {sendVote, deletePost} from "../../actions/posts";
+import {deletePost, sendVote} from "../../actions/posts";
 
 class PostItem extends Component {
     render () {
 
-        const { post, sendVote, deletePost } = this.props;
+        const { post, sendVote, deletePost} = this.props;
 
         return (
             <div>
@@ -28,8 +28,8 @@ class PostItem extends Component {
                 <div>
                     <PostControl
                         post={post}
-                        onSendVote={sendVote}
                         onDeletePost={deletePost}
+                        onSndVote={sendVote}
                     />
                 </div>
             </div>
@@ -37,5 +37,9 @@ class PostItem extends Component {
     }
 }
 
+// export default PostItem;
 
-export default connect(null, { sendVote, deletePost })(PostItem);
+
+export default  connect(
+    null, { deletePost, sendVote }
+)(PostItem);

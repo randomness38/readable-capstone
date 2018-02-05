@@ -53,22 +53,29 @@ export const fetchPosts = () => dispatch => {
 export const fetchPostsByCategory = (category) => dispatch => {
     Api.getCategoryPosts(category)
         .then(posts => dispatch(loadPosts(posts)))
-}
+};
 
 
 
 //
-// export const deletePost = (id) => dispatch => {
-//     Api.deletePost(id)
-//         .then(id => dispatch(removePost(id)))
-// }
-
-
-export const deletePost = ( id ) => dispatch => (
-    Api
-    .deletePost( id )
-    .then(dispatch({
+export const deletePost = (id) => {
+    return {
         type: DELETE_POST,
         id
-    }))
-);
+    }
+};
+
+// export const deletePost = (id) => dispatch => {
+//     Api.deletePost(id)
+//         .then(() => dispatch(removePost(id)))
+// }
+
+//
+// export const deletePost = ( id ) => dispatch => (
+//     Api
+//     .deletePost( id )
+//     .then(dispatch({
+//         type: DELETE_POST,
+//         id
+//     }))
+// );

@@ -3,7 +3,7 @@
 //
 // let token = localStorage.token
 //
-// if (!token)
+// if (!token)ㅋ
 //     token = localStorage.token = Math.random().toString(36).substr(-8)
 //
 // const headers = {
@@ -41,7 +41,7 @@ export function getPosts() {
 }
 
 
-// 얘는 works. comment/ post 동시에 쓸 수 있는 action creator 만드는 중
+// 얘는 works. comment/ post 동시에 쓸 수 있는 action creator 만드는
 export function vote(id, vote) {
 
     return fetch(`${ENV.api_url}/posts/${id}`,
@@ -54,7 +54,7 @@ export function vote(id, vote) {
         .then((res) => res.json());
 
 }
-
+//
 // export function vote(id, option, type) {
 //     const postData = { id: id, option: option };
 //     return fetch(`${ENV.api_url}/${type}/${id}`,
@@ -158,6 +158,7 @@ export function deleteComment(id) {
         });
 
 }
+
 
 export function deletePost(id) {
 
