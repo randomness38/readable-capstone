@@ -114,7 +114,8 @@ export function addComment(body) {
         method: 'POST',
         body: JSON.stringify(body)
     })
-        .then((res) => res.json());
+        .then((res) => res.json())
+        .then(data => data);
 
 }
 

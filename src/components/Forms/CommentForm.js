@@ -17,23 +17,21 @@ class CommentForm extends Component {
         if( this.props.isEditing ) {
             this.setState({
                 author: this.props.comment.author,
-                // title: this.props.post.title,
                 body: this.props.comment.body,
-                // category: this.props.post.category
             });
         }
     }
 
 
 
-    componentWillReceiveProps(nextProps) {
-        if( this.props.isEditing ) {
-            this.setState({
-                author: nextProps.comment.author,
-                body: nextProps.comment.body,
-            });
-        }
-    }
+    // componentWillReceiveProps(nextProps) {
+    //     if( this.props.isEditing ) {
+    //         this.setState({
+    //             author: nextProps.comment.author,
+    //             body: nextProps.comment.body,
+    //         });
+    //     }
+    // }
 
     handleInputChange(e) {
         this.setState({[e.target.name]: e.target.value})

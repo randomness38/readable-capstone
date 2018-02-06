@@ -8,8 +8,7 @@ import CommentItem from './CommentItem';
 import PostControl from '../Forms/PostControl';
 import CommentForm from '../Forms/CommentForm';
 import { fromNow, dateTimeFormat } from '../Forms/Setdate';
-import {fetchComments} from "../../actions/comments";
-import {addComment} from "../../actions/comments";
+import {fetchComments, addComment} from "../../actions/comments";
 import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
 
 
@@ -31,17 +30,16 @@ class PostDetailScene extends Component {
     handleCommentAdd = ( event ) => {
         event.preventDefault();
         const serializedComment = FormSerialize(event.target, {hash: true});
-        const postId = uuid();
+        const commentId = uuid();
         const comment = {
             ...serializedComment,
-            id: postId,
+            id: commentId,
+            parentId: this.props.post.id,
             timestamp:Date.now()
         }
-        this.props.addComment( comment ).then( ({ p }) => {
-            // 이게 제대로 된 refresh 인데 post를 못잡아 오겠어
-            this.props.history.push(`/${this.props.post.category}/${this.props.post.id}`);
-        });
-    }
+        this.props.addComment( comment )
+        };
+
 
 
 

@@ -29,12 +29,7 @@ export const loadPost = (post) => {
 export const addPost = (body) => dispatch => {
     // const postId = uuid();
     return Api.addPost(body)
-        .then(post => dispatch({
-            type: LOAD_POST,
-            post,
-            // id: postId,
-            // timestamp:Date.now()
-        }));
+        .then(post => dispatch(loadPost(post)));
 };
 
 export const editPost = (body) => dispatch => {
