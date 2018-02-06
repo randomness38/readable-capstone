@@ -1,10 +1,35 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
+import FormSerialize from 'form-serialize';
+
 import { fromNow, dateTimeFormat } from '../Forms/Setdate';
+import CommentForm from '../Forms/CommentForm';
 import CommentControl from './CommentControl';
-import {deleteComment, sendCommentVote} from "../../actions/comments";
+import {deleteComment, sendCommentVote, editComment} from "../../actions/comments";
 
 class CommentItem extends Component {
+
+    state = {
+        isEditing:false,
+    }
+
+    onEditing = ( e ) => {
+        this.setState({
+            isEditing: true,
+        });
+    }
+
+    handleCommentEdit = ( event ) => {
+        event.preventDefault();
+        const serializedComment = FormSerialize(event.target, {hash: true});
+        const comment = {
+            ...this.props.comment,
+            ...serializedComment,
+        }
+        this.props.editComment( comment ).then( ({ c }) => {
+            window.location.reload();
+        });
+    }
 
     render () {
         const { comment, deleteComment, sendCommentVote } = this.props;
@@ -21,9 +46,19 @@ class CommentItem extends Component {
                         comment={comment}
                         onDelete={deleteComment}
                         onSendVote={sendCommentVote}
+                        onEditing={this.onEditing}
                     />
                 </div>
+                {/* Editing Pop*/}
+                {
+                   this.state.isEditing &&
+                   <CommentForm
+                       isEditing={this.state.isEditing}
+                       onFormSubmit={this.handleCommentEdit}
+                       comment={comment}/>
+                }
 
+                <hr />
             </div>
         );
     }
@@ -33,5 +68,5 @@ class CommentItem extends Component {
 
 
 export default  connect(
-    null, { deleteComment, sendCommentVote }
+    null, { deleteComment, sendCommentVote, editComment }
 )(CommentItem);

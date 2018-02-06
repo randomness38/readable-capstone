@@ -7,7 +7,7 @@ class CommentControl extends Component {
 
     render () {
 
-        const { post, comment, onDelete, onSendVote } = this.props;
+        const { comment, onDelete, onSendVote } = this.props;
         // const { post } = this.props;
         // console.log(post)
         console.log(comment)
@@ -35,7 +35,11 @@ class CommentControl extends Component {
                     </div>
 
                     {/*<Link to={`/edit/post/${comment.id}`}>*/}
-                        <button>Edit Button</button>
+                        <button onClick={(e) => {
+                            e.preventDefault();
+                            this.props.onEditing();
+                        }}
+                        >Edit Button</button>
                     {/*</Link>*/}
 
                     <button

@@ -9,7 +9,7 @@ import PostControl from '../Forms/PostControl';
 import CommentForm from '../Forms/CommentForm';
 import { fromNow, dateTimeFormat } from '../Forms/Setdate';
 import {fetchComments} from "../../actions/comments";
-import {addComment, editComment} from "../../actions/comments";
+import {addComment} from "../../actions/comments";
 import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
 
 
@@ -39,20 +39,11 @@ class PostDetailScene extends Component {
             timestamp:Date.now()
         }
         this.props.addComment( comment ).then( ({ p }) => {
+            // 이게 제대로 된 refresh 인데 post를 못잡아 오겠어
             this.props.history.push(`/${this.props.post.category}/${this.props.post.id}`);
         });
     }
 
-    // 이건 ComentItem 에서 보내야겄다. 여기에서는 this.props.comment 를 넣어줘야 함 잊지마!
-    // handleCommentEdit = ( event ) => {
-    //     event.preventDefault();
-    //     const serializedComment = FormSerialize(event.target, {hash: true});
-    //     const commentId = uuid();
-    //     const comment = {
-    //         ...this.props.comment,
-    //         ...serializedComment,
-    //     }
-    // }
 
 
     render () {
@@ -138,7 +129,7 @@ export default  connect(
         fetchPosts,
         deletePost,
         addComment,
-        editComment}
+        }
 )(PostDetailScene);
 
 

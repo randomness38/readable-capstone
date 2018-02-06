@@ -21,12 +21,7 @@ class CommentForm extends Component {
         }
     }
 
-    // TODO: 이건 commentItem 에서 써야지 -> edit 버튼 누를 때 땋!
-    // editComment = ( event ) => {
-    //     this.setState({
-    //         isEditing: true,
-    //     });
-    // }
+
 
     // return to previous place
     // 이 버튼 누르면 'PUSH' 라는 건가??
