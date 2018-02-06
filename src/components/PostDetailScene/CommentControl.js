@@ -1,21 +1,14 @@
-// component 일 필요 없는데?
 import React, { Component } from 'react';
-// import {connect} from "react-redux";
-// import { withRouter } from 'react-router-dom';
 
 class CommentControl extends Component {
 
     render () {
 
         const { comment, onDelete, onSendVote } = this.props;
-        // const { post } = this.props;
-        // console.log(post)
-        console.log(comment)
-        console.log('comment')
+
         return (
             <div>
                 <div>
-                    {/*VOTE PLACE*/}
                     <div>
                         <i onClick={(e) => {
                             e.preventDefault();
@@ -34,13 +27,11 @@ class CommentControl extends Component {
 
                     </div>
 
-                    {/*<Link to={`/edit/post/${comment.id}`}>*/}
                         <button onClick={(e) => {
                             e.preventDefault();
                             this.props.onEditing();
                         }}
                         >Edit Button</button>
-                    {/*</Link>*/}
 
                     <button
                         onClick={ e => {

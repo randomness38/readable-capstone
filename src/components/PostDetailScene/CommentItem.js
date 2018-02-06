@@ -13,7 +13,7 @@ class CommentItem extends Component {
         isEditing:false,
     }
 
-    onEditing = ( e ) => {
+    onEditing = () => {
         this.setState({
             isEditing: true,
         });
@@ -22,24 +22,26 @@ class CommentItem extends Component {
     handleCommentEdit = ( event ) => {
         event.preventDefault();
         const serializedComment = FormSerialize(event.target, {hash: true});
-        const comment = {
+        const updatedComment = {
             ...this.props.comment,
             ...serializedComment,
         }
-        this.props.editComment( comment ).then( ({ c }) => {
-            window.location.reload();
+        this.props.editComment( updatedComment, updatedComment.id ).then( data => {
+            this.setState({
+                isEditing: false
+            })
         });
     }
-
+    // TODO: commentForm으로 다시 해보기
     render () {
         const { comment, deleteComment, sendCommentVote } = this.props;
         return (
             <div>
+
                 <hr />
                 <time dateTime={ dateTimeFormat(comment.timestamp)}>{ fromNow(comment.timestamp)}</time>
                 <h4>{comment.body}</h4>
                 <h5>{comment.author}</h5>
-                <hr />
 
                 <div>
                     <CommentControl
@@ -49,18 +51,20 @@ class CommentItem extends Component {
                         onEditing={this.onEditing}
                     />
                 </div>
+
+
                 {/* Editing Pop*/}
                 {
-                   this.state.isEditing &&
-                   <CommentForm
-                       isEditing={this.state.isEditing}
-                       onFormSubmit={this.handleCommentEdit}
-                       comment={comment}/>
+                    this.state.isEditing &&
+                    <CommentForm
+                        isEditing={this.state.isEditing}
+                        onFormSubmit={this.handleCommentEdit}
+                        comment={comment}/>
                 }
 
                 <hr />
             </div>
-        );
+        )
     }
 }
 

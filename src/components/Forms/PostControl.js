@@ -8,9 +8,6 @@ class PostControl extends Component {
     render () {
 
         const { post, onDelete, onSendVote, onBack } = this.props;
-        // const { post } = this.props;
-        // console.log(post)
-        console.log(post)
         return (
             <div>
                 <div>

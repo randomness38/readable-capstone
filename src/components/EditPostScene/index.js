@@ -8,7 +8,6 @@ import PostForm from '../Forms/PostForm'
 class EditPostScene extends Component {
     componentDidMount() {
         this.props.fetchPosts();
-        // console.log(this.props.post)
     }
 
     componentWillReceiveProps(nextProps) {
@@ -33,7 +32,6 @@ class EditPostScene extends Component {
     render () {
 
         const { post } = this.props;
-        // console.log(post)
 
         return (
             <div className="PostEdit container">

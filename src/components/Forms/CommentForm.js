@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 // import { withRouter } from 'react-router-dom';
 // import { connect } from 'react-redux';
@@ -9,6 +10,8 @@ class CommentForm extends Component {
         author: "",
         body: "",
     }
+
+    // submit 누르면 도킹 받아먹는애가 없는데??
 
     componentDidMount() {
         if( this.props.isEditing ) {
@@ -23,23 +26,21 @@ class CommentForm extends Component {
 
 
 
-    // return to previous place
-    // 이 버튼 누르면 'PUSH' 라는 건가??
-    // Todo: 이거말고 removeAllText 해서 setState ? 비우는 그런 기능을 넣으면 좋겠는데
-    // cancelCommentAdd = ( event ) => {
-    //     event.preventDefault();
-    //     if ( this.props.history.action === 'PUSH')
-    //         this.props.history.goBack()
-    //     else
-    //         this.props.history.push("/");
-    // }
+    componentWillReceiveProps(nextProps) {
+        if( this.props.isEditing ) {
+            this.setState({
+                author: nextProps.comment.author,
+                body: nextProps.comment.body,
+            });
+        }
+    }
 
     handleInputChange(e) {
         this.setState({[e.target.name]: e.target.value})
     }
     render () {
         const { onFormSubmit } = this.props;
-        const { author, body } = this.state;
+        // const { author, body } = this.state;
 
         return (
             <form className="PostForm" onSubmit={ onFormSubmit }>
@@ -52,7 +53,7 @@ class CommentForm extends Component {
                             type="text"
                             name="author"
                             placeholder="Your name"
-                            value={author}
+                            value={this.state.author}
                             onChange={ e => this.handleInputChange(e) }
                             required />
                     </div>
@@ -63,7 +64,7 @@ class CommentForm extends Component {
                             className="form-control"
                             name="body"
                             rows="3"
-                            value={body}
+                            value={this.state.body}
                             placeholder="lorem ipsum..."
                             onChange={ e => this.handleInputChange(e) }
                             required

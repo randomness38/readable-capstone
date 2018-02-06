@@ -22,7 +22,6 @@ class PostDetailScene extends Component {
         const { idPost, fetchComments, fetchPosts} = this.props;
         fetchPosts();
         fetchComments(idPost);
-        // console.log(idPost)
 
     }
     windowBack = () => {
@@ -50,8 +49,6 @@ class PostDetailScene extends Component {
         const { post, commentIds, deletePost, comments, sendPostVote } = this.props;
         const postComments = commentIds.map( id => comments[id]);
 
-        // console.log(post)
-        console.log(post)
         return (
             <div>
                 {post && post.title && postComments? (
@@ -80,6 +77,7 @@ class PostDetailScene extends Component {
                         {
                             postComments.map(comment => (
                                 <CommentItem
+                                    key={comment.id}
                                     comment={comment}
 
                                 />
