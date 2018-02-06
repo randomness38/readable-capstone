@@ -1,4 +1,3 @@
-// component 일 필요 없는데?
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +14,7 @@ class PostControl extends Component {
                     <div>
                         <i onClick={(e) => {
                             e.preventDefault();
-                            onSendVote(post.id,"upVote")
+                            onSendVote(post.id,"upVote",'posts')
                         }}
                           >   UP  </i>
 
@@ -23,7 +22,7 @@ class PostControl extends Component {
 
                         <i onClick={(e) => {
                             e.preventDefault();
-                            onSendVote(post.id,"downVote")
+                            onSendVote(post.id,"downVote",'posts')
 
                         }}
                         >   DOWN  </i>

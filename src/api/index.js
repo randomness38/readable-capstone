@@ -40,20 +40,32 @@ export function getPosts() {
 
 }
 
+//여기 테스트 중
+// Post control 에서도 파라미터 추가해봐
+// export function votePost(id, vote) {
+//     return fetch(`${ENV.api_url}/posts/${id}`,
+//         {
+//             headers: ENV.headers,
+//             method: 'POST',
+//             body: JSON.stringify({option: vote})
+//         }
+//     )
+//         .then((res) => res.json());
+//
+// }
 
-export function vote(id, vote) {
-
-    return fetch(`${ENV.api_url}/posts/${id}`,
+export function vote(id, vote, type) {
+    return fetch(`${ENV.api_url}/${type}/${id}`,
         {
             headers: ENV.headers,
             method: 'POST',
             body: JSON.stringify({option: vote})
         }
     )
-        .then((res) => res.json());
+        .then((res) => res.json())
+        .then(data => data);
 
 }
-
 
 
 export function addPost(body) {

@@ -12,7 +12,7 @@ class CommentControl extends Component {
                     <div>
                         <i onClick={(e) => {
                             e.preventDefault();
-                            onSendVote(comment.id,"upVote")
+                            onSendVote(comment.id,"upVote",'comments')
                         }}
                         >   UP  </i>
 
@@ -20,7 +20,7 @@ class CommentControl extends Component {
 
                         <i onClick={(e) => {
                             e.preventDefault();
-                            onSendVote(comment.id,"downVote")
+                            onSendVote(comment.id,"downVote",'comments')
 
                         }}
                         >   DOWN  </i>

@@ -38,8 +38,8 @@ export const editComment = (body, id) => dispatch => {
 //         .then(comment => dispatch(loadComment(comment)));
 // };
 
-export const sendCommentVote = (id, vote) => dispatch => {
-    Api.vote(id, vote)
+export const sendCommentVote = (id, vote, type) => dispatch => {
+    Api.vote(id, vote, type)
         .then(comment => dispatch(loadComment(comment)))
 };
 

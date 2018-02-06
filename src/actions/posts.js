@@ -43,8 +43,8 @@ export const editPost = (body) => dispatch => {
 };
 
 // 어떻게 reducer가 없어 이 type 을 다루는
-export const sendPostVote = (id, vote) => dispatch => {
-    Api.vote(id, vote)
+export const sendPostVote = (id, vote, type) => dispatch => {
+    Api.vote(id, vote, type)
         .then(post => dispatch(loadPost(post)))
 };
 
