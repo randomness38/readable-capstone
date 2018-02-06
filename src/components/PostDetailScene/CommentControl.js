@@ -1,12 +1,13 @@
 // component 일 필요 없는데?
 import React, { Component } from 'react';
-
+// import {connect} from "react-redux";
+// import { withRouter } from 'react-router-dom';
 
 class CommentControl extends Component {
 
     render () {
 
-        const { comment, onDelete, onSendVote } = this.props;
+        const { post, comment, onDelete, onSendVote } = this.props;
         // const { post } = this.props;
         // console.log(post)
         console.log(comment)
@@ -40,7 +41,8 @@ class CommentControl extends Component {
                     <button
                         onClick={ e => {
                             e.preventDefault();
-                            onDelete(comment.id)
+                            onDelete(comment.id);
+                            window.location.reload();
                         }}
 
                     >Delete Button</button>
@@ -51,3 +53,16 @@ class CommentControl extends Component {
 }
 
 export default CommentControl;
+
+// function mapStateToProps(state, {params}){
+//     return {
+//         post: state.posts.entities[params.idPost],
+//     }
+// }
+//
+// // 이따가 mapDispatch 로 옮기는게 어때?
+// // export default withRouter(connect(mapStateToProps)(CommentForm));
+//
+// export default  withRouter(connect(
+//     mapStateToProps
+// )(CommentControl));

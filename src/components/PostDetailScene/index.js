@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
 import { Link } from 'react-router-dom';
+import FormSerialize from 'form-serialize';
+import uuid from 'uuid'
+
 import CommentItem from './CommentItem';
 import PostControl from '../Forms/PostControl';
+import CommentForm from '../Forms/CommentForm';
 import { fromNow, dateTimeFormat } from '../Forms/Setdate';
 import {fetchComments} from "../../actions/comments";
-// import {deleteComment, sendCommentVote, fetchComments} from "../../actions/comments";
+import {addComment, editComment} from "../../actions/comments";
 import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
+
 
 
 class PostDetailScene extends Component {
@@ -23,6 +28,31 @@ class PostDetailScene extends Component {
     windowBack = () => {
         window.history.back()
     }
+
+    handleCommentAdd = ( event ) => {
+        event.preventDefault();
+        const serializedComment = FormSerialize(event.target, {hash: true});
+        const postId = uuid();
+        const comment = {
+            ...serializedComment,
+            id: postId,
+            timestamp:Date.now()
+        }
+        this.props.addComment( comment ).then( ({ p }) => {
+            this.props.history.push(`/${this.props.post.category}/${this.props.post.id}`);
+        });
+    }
+
+    // 이건 ComentItem 에서 보내야겄다. 여기에서는 this.props.comment 를 넣어줘야 함 잊지마!
+    // handleCommentEdit = ( event ) => {
+    //     event.preventDefault();
+    //     const serializedComment = FormSerialize(event.target, {hash: true});
+    //     const commentId = uuid();
+    //     const comment = {
+    //         ...this.props.comment,
+    //         ...serializedComment,
+    //     }
+    // }
 
 
     render () {
@@ -73,6 +103,14 @@ class PostDetailScene extends Component {
                         </div>
                     </div>
                 )}
+                <hr />
+                {/*add 바로보내면 안되고!  */}
+                <h3>ADD COMMENT</h3>
+                <CommentForm
+                    onFormSubmit={this.handleCommentAdd}
+                    post={post}/>
+                <hr />
+                <h3>GO HOME</h3>
                 <Link
                     to='/'
                 >Main</Link>
@@ -92,8 +130,15 @@ function mapStateToProps(state, ownProps){
     }
 }
 
+// 이따가 mapDispatch 로 옮기는게 어때?
 export default  connect(
-    mapStateToProps, { sendPostVote, fetchComments, fetchPosts, deletePost }
+    mapStateToProps, {
+        sendPostVote,
+        fetchComments,
+        fetchPosts,
+        deletePost,
+        addComment,
+        editComment}
 )(PostDetailScene);
 
 
