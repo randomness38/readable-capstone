@@ -58,6 +58,15 @@ class RootScene extends Component {
 
         return (
             <div>
+
+                {/*<AppHeader />*/}
+                {
+                    postsToRender.map(post => (
+                        <PostItem key={`${post.id}-${post.category}${categoryName}_view`} post={post}/>
+                    ))
+                }
+                <p> ROOT SCENE </p>
+
                 <div>
                     <span>Order by </span>
                     <select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>
@@ -67,13 +76,7 @@ class RootScene extends Component {
                 </div>
 
 
-                <AppHeader />
-                {
-                postsToRender.map(post => (
-                    <PostItem key={`${post.id}-${post.category}${categoryName}_view`} post={post}/>
-                ))
-                }
-                <p> ROOT SCENE </p>
+
             </div>
 
 

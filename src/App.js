@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 
 
 import RootScene from './components/RootScene';
+import AppHeader from './components/RootScene/AppHeader';
 import AddPostScene from "./components/AddPostScene";
 import EditPostScene from "./components/EditPostScene";
 import PostDetailScene from "./components/PostDetailScene";
@@ -24,6 +25,7 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div>
+                    <AppHeader />
                     <Switch>
                         {/*<Route exact path="/" component={RootScene}/>*/}
                         <Route
