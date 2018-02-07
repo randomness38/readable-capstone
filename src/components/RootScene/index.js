@@ -57,23 +57,27 @@ class RootScene extends Component {
         // console.log(postsToRender)
 
         return (
-            <div>
+            <div className='root-scene-container'>
+                <div>
+                    <div>
+                        <span>Order by </span>
+                        <select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>
+                            <option value="-voteScore">Best score</option>
+                            <option value="-timestamp">Most recent</option>
+                        </select>
+                    </div>
 
-                {/*<AppHeader />*/}
-                {
-                    postsToRender.map(post => (
-                        <PostItem key={`${post.id}-${post.category}${categoryName}_view`} post={post}/>
-                    ))
-                }
-                <p> ROOT SCENE </p>
+                </div>
 
                 <div>
-                    <span>Order by </span>
-                    <select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>
-                        <option value="-voteScore">Best score</option>
-                        <option value="-timestamp">Most recent</option>
-                    </select>
+                    {
+                        postsToRender.map(post => (
+                            <PostItem key={`${post.id}-${post.category}${categoryName}_view`} post={post}/>
+                        ))
+                    }
                 </div>
+
+
 
 
 

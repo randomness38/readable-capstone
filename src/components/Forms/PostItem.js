@@ -12,7 +12,7 @@ class PostItem extends Component {
 
 
         return (
-            <div>
+            <div className='post-item-container'>
                 <div>
                     <h6>{post.category}</h6>
 

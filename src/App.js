@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
+// 왜 안먹히지
+import './App.css';
 import { ToastContainer } from 'react-toastify';
-
-
 import RootScene from './components/RootScene';
 import AppHeader from './components/RootScene/AppHeader';
 import AddPostScene from "./components/AddPostScene";
@@ -25,7 +25,11 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <AppHeader />
+                    <Switch>
+                        <Route exact path="/" component={AppHeader} />
+                        <Route path="/category/:categoryName?" component={AppHeader} />
+                    </Switch>
+                    {/*<AppHeader />*/}
                     <Switch>
                         {/*<Route exact path="/" component={RootScene}/>*/}
                         <Route
@@ -36,11 +40,11 @@ class App extends Component {
                                 />
                             )}
                         />
-                        <Route
-                            key={'category-route'}
-                            exact path='/category/:categoryName'
-                            render={({match}) => ( <RootScene categoryName={ match.params.categoryName}/>)}
-                        />
+                        {/*<Route*/}
+                            {/*key={'category-route'}*/}
+                            {/*exact path='/category/:categoryName'*/}
+                            {/*render={({match}) => ( <RootScene categoryName={ match.params.categoryName}/>)}*/}
+                        {/*/>*/}
                         <Route exact path="/category/:categoryName" component={RootScene}/>
                         <Route exact path="/add/post" component={AddPostScene}/>
                         <Route exact path="/edit/post/:idPost" component={EditPostScene}/>

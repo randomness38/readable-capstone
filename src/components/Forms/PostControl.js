@@ -8,7 +8,7 @@ class PostControl extends Component {
 
         const { post, onDelete, onSendVote, onBack } = this.props;
         return (
-            <div>
+            <div className='post-control-container'>
                 <div>
                     {/*VOTE PLACE*/}
                     <div>

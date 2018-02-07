@@ -8,15 +8,22 @@ class AppHeader extends Component {
 
 
     render() {
+        const routeCategory = this.props.match.params.categoryName;
+        console.log(routeCategory)
         const {categoriesIds, categories} =  this.props;
         return (
-            <div>
+            <div className='appHeader-container'>
                 <Link
                     to='/'
                 >Readable</Link>
-
+                <div className='category-menu'>
                 {categoriesIds !== undefined && categoriesIds.map(category => (
-                    <li  key={categories[category].name}>
+                    <li
+                        key={categories[category].name}
+                        className={
+                            'category-list__item' + (routeCategory === categories[category].name ? "--active" : "")
+                        }
+                    >
                         <FilterNavLink
                             filter={categories[category].path}
                         >
@@ -24,6 +31,7 @@ class AppHeader extends Component {
                         </FilterNavLink>
                     </li>
                 ))}
+                </div>
 
                 <Link
                     to={'/add/post'}
@@ -37,8 +45,9 @@ class AppHeader extends Component {
     }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state, ownProps){
     return{
+        categoryName: ownProps.match.params.categoryName || 'all',
         categories: state.categories.entities,
         categoriesIds: state.categories.ids
     }
@@ -50,3 +59,4 @@ AppHeader = withRouter(connect(
 )(AppHeader));
 
 export default AppHeader ;
+
