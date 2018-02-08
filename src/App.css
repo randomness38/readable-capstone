@@ -55,6 +55,19 @@ body {
     background-repeat: no-repeat;
     background-position: 28px 16px;
 }
+.nav-link {
+    text-decoration: none;
+    color: #16a085;
+}
+
+.main-link {
+    color: #af544f;
+    font-size: 30px;
+    text-decoration: none;
+}
+.main-link-container {
+
+}
 
 .category-list__item--active{
     color: #16a085;
@@ -66,9 +79,201 @@ body {
 }
 
 .post-item-container{
-
+    background: #ecf0f1;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+    max-width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
 }
 
 .post-control-container{
 
+}
+
+
+.add-post {
+    width: 100%;
+    position: relative;
+    height: 80px;
+    margin: 2px 0 1px;
+}
+
+.add-post__button{
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 100%;
+    background: transparent;
+    color: rgba(0, 0, 0, 0);
+    border: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 28px 16px;
+    background-image: url('https://jsbin-user-assets.s3.amazonaws.com/GarthDB/add.svg');
+}
+
+.add-post__text {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100%;
+    border: 0;
+    left: 80px;
+    top: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.add-post__input {
+    border: 0;
+    font-size: 1rem;
+    height: 100%;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left: 80px;
+    width: 100%;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.add-post__input:focus {
+    outline: none;
+    background: rgba(0,0,0,0.05)
+}
+
+.add-post__input::placeholder {
+    color: #b3b3b3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity:  1;
+}
+
+.add-post-form{
+    width: 100%;
+    padding: 20px;
+    background-color: #e6e6e6;
+    overflow: hidden;
+}
+
+
+
+.add-link {
+
+
+}
+
+.filters {
+    height: 80px;
+    box-sizing: border-box;
+    padding: 30px 20px 15px 25px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    font-weight: 700;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+    border-radius: 3px 3px 0 0;
+    border: none;
+}
+
+.filters__title, .filter {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.filters__title {
+    float:left;
+}
+
+.filter-container{
+    background-color: black;
+}
+
+.filter {
+    cursor: pointer;
+
+}
+
+[class^="filter__label"] {
+    position: relative;
+    display: inline-block;
+    padding-left: 16px;
+    color: rgba(236,240,241,0.3);
+}
+
+[class^="filter__label"]:hover {
+    color: #ccc;
+}
+
+.filter__radio:checked + [class^="filter__label"] {
+    color: #fff;
+}
+
+[class^="filter__label"]::before,
+.filter__label--all::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: #647380;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.filter__radio {
+    position: absolute;
+    opacity: 0;
+}
+
+/*.filter__label--react {*/
+    /*padding-left: 21px;*/
+/*}*/
+
+.filter__label--react::after {
+    left: 5px;
+}
+
+.filter__radio:checked + .filter__label--react::before {
+    background: dodgerblue;
+}
+
+.filter__radio:checked + .filter__label--redux::before {
+    background: #af544f;
+}
+
+.filter__radio:checked + .filter__label--udacity::before {
+    background: #16a085;
+}
+
+
+.edit-button  {
+    width: 90px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #16a085;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.delete-button  {
+    width: 90px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #af544f;
+    margin-left: 5px;
+    padding: 10px;
+    text-decoration: none;
 }

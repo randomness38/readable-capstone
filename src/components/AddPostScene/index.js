@@ -5,6 +5,7 @@ import uuid from 'uuid'
 import { addPost } from '../../actions/posts';
 import PostForm from '../Forms/PostForm'
 
+
 class AddPostScene extends Component {
 
     handlePostSubmit = ( event ) => {
@@ -22,7 +23,7 @@ class AddPostScene extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='add-post-form'>
                 <PostForm
                     formHeaderTitle="Add New Post"
                     onFormSubmit={this.handlePostSubmit} />

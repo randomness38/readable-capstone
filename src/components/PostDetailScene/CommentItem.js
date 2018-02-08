@@ -6,6 +6,7 @@ import { fromNow, dateTimeFormat } from '../Forms/Setdate';
 import CommentForm from '../Forms/CommentForm';
 import CommentControl from './CommentControl';
 import {deleteComment, sendCommentVote, editComment} from "../../actions/comments";
+import './PostDetailScene.css';
 
 class CommentItem extends Component {
 
@@ -36,13 +37,10 @@ class CommentItem extends Component {
     render () {
         const { comment, deleteComment, sendCommentVote } = this.props;
         return (
-            <div>
-
-                <hr />
+            <div className='comment-item__list'>
                 <time dateTime={ dateTimeFormat(comment.timestamp)}>{ fromNow(comment.timestamp)}</time>
                 <h4>{comment.body}</h4>
                 <h5>{comment.author}</h5>
-
                 <div>
                     <CommentControl
                         comment={comment}
@@ -51,9 +49,6 @@ class CommentItem extends Component {
                         onEditing={this.onEditing}
                     />
                 </div>
-
-
-                {/* Editing Pop*/}
                 {
                     this.state.isEditing &&
                     <CommentForm
@@ -61,15 +56,10 @@ class CommentItem extends Component {
                         onFormSubmit={this.handleCommentEdit}
                         comment={comment}/>
                 }
-
-                <hr />
             </div>
         )
     }
 }
-
-// export default CommentItem;
-
 
 export default  connect(
     null, { deleteComment, sendCommentVote, editComment }

@@ -56,15 +56,15 @@ class PostForm extends Component {
         const { onFormSubmit, formHeaderTitle, categories, categoryIds  } = this.props;
 
         return (
-            <form className="PostForm" onSubmit={ onFormSubmit }>
-                <div className="card-body">
-                    <h4 className="card-title mb-0">{ formHeaderTitle }</h4>
+            <form className='add-post-form' onSubmit={ onFormSubmit }>
+                <div>
+                    <h4>{ formHeaderTitle }</h4>
                 </div>
-                <div className="card-footer">
-                    <div className="form-group">
+                <div>
+                    <div>
                         <label htmlFor="author">Name</label>
                         <input
-                            className="form-control"
+                            className="add-post__input"
                             type="text"
                             name="author"
                             placeholder="Your name"
@@ -72,10 +72,10 @@ class PostForm extends Component {
                             onChange={ e => this.handleInputChange(e) }
                             required />
                     </div>
-                    <div className="form-group">
+                    <div>
                         <label htmlFor="title">Post Title</label>
                         <input
-                            className="form-control"
+                            className="add-post__input"
                             type="text"
                             name="title"
                             value={this.state.title}
@@ -83,10 +83,10 @@ class PostForm extends Component {
                             onChange={ e => this.handleInputChange(e) }
                             required />
                     </div>
-                    <div className="form-group">
+                    <div>
                         <label htmlFor="body">Content</label>
                         <textarea
-                            className="form-control"
+                            className="add-post__input"
                             name="body"
                             rows="3"
                             value={this.state.body}
@@ -96,28 +96,33 @@ class PostForm extends Component {
                         >
             </textarea>
                     </div>
-                    <div className="form-group">
-                        <label>Select Category</label>
-                        <div className="btn-toolbar">
-                            <div className="btn-group" data-toggle="buttons">
+                    <div className="filters">
+                        <label className='filters__title'>Select Category</label>
+                        <div className="filter">
+                            <div>
                                 { categories!== undefined && categoryIds.map( Id => (
                                     <label
                                         key={categories[Id].path}
                                         onClick={this.selectCategory}
-                                        // className={ "btn btn-secondary" + ( this.state.category === categories[Id].name ? " active" : "")}
+                                        className='filter'
                                     >
-                                        <input type="radio" name="category" value={categories[Id].name} /> {categories[Id].name}
+                                        <input className='filter__radio' type="radio" name="category" value={categories[Id].name} />
+                                        <span
+                                            className={ "filter__label--" + ( this.state.category === categories[Id].name ? `${categories[Id].name }` : "")}
+                                        >
+                                        {categories[Id].name}
+                                        </span>
                                     </label>
                                 ))}
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="card-body text-right">
-                    <button className="card-link btn btn-outline-secondary"
+                <div>
+                    <button
                             onClick={this.cancelPostAdd}
                     >Cancel</button>
-                    <button className="card-link btn btn-primary"
+                    <button
                             disabled={ ! this.state.category }
                     >Save Post</button>
                 </div>

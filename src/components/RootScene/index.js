@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import { withRouter } from 'react-router';
 import SortBy from 'sort-by';
-import AppHeader from './AppHeader'
 import PostItem from "../Forms/PostItem";
 import {fetchPostsByCategory} from "../../actions/posts";
 

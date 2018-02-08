@@ -8,20 +8,22 @@ class AppHeader extends Component {
 
 
     render() {
-        const routeCategory = this.props.match.params.categoryName;
-        console.log(routeCategory)
-        const {categoriesIds, categories} =  this.props;
+        // const routeCategory = this.props.match.params.categoryName;
+        const {categoriesIds, categories, categoryName} =  this.props;
         return (
             <div className='appHeader-container'>
-                <Link
-                    to='/'
-                >Readable</Link>
+                <div className='main-link-container'>
+                    <Link className='main-link'
+                        to='/'
+                    >Readable</Link>
+                </div>
+
                 <div className='category-menu'>
                 {categoriesIds !== undefined && categoriesIds.map(category => (
                     <li
                         key={categories[category].name}
                         className={
-                            'category-list__item' + (routeCategory === categories[category].name ? "--active" : "")
+                            'category-list__item' + (categoryName === categories[category].name ? "--active" : "")
                         }
                     >
                         <FilterNavLink
@@ -33,11 +35,16 @@ class AppHeader extends Component {
                 ))}
                 </div>
 
-                <Link
-                    to={'/add/post'}
-                >
-                    <button>new post</button>
-                </Link>
+                <div className='add-post'>
+                    <Link
+                        className='add-link'
+                        to={'/add/post'}
+                    >
+                        <button className='add-post__button'>new post</button>
+                        <span className='add-post__text'>NEW POST</span>
+                    </Link>
+                </div>
+
 
             </div>
 

@@ -1,8 +1,11 @@
 import * as Api from "../api";
 
-export const LOAD_COMMENTS = '[Commment] Load comments';
-export const LOAD_COMMENT = '[Commment] Load comment';
-export const DELETE_COMMENT = '[Commment] delete comment';
+export const LOAD_COMMENTS = '[Comment] Load comments';
+export const LOAD_COMMENT = '[Comment] Load comment';
+export const ADD_COMMENT = '[Comment] Add comment';
+export const EDIT_COMMENT = '[Comment] Edit comment';
+export const DELETE_COMMENT = '[Comment] Delete comment';
+export const VOTE_COMMENT = '[Comment] Vote comment';
 
 export const loadComments = (comments) => {
     return {

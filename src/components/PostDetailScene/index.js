@@ -5,9 +5,8 @@ import FormSerialize from 'form-serialize';
 import uuid from 'uuid'
 
 import CommentItem from './CommentItem';
-import PostControl from '../Forms/PostControl';
+import PostItem from '../Forms/PostItem';
 import CommentForm from '../Forms/CommentForm';
-import { fromNow, dateTimeFormat } from '../Forms/Setdate';
 import {fetchComments, addComment} from "../../actions/comments";
 import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
 
@@ -19,13 +18,16 @@ class PostDetailScene extends Component {
     componentDidMount() {
         // 여기서 이미 comment filter 해서 올텐데?
         const { idPost, fetchComments, fetchPosts} = this.props;
-        fetchPosts();
         fetchComments(idPost);
+        fetchPosts()
 
     }
-    windowBack = () => {
-        window.history.back()
-    }
+
+
+
+    // windowBack = () => {
+    //     window.history.back()
+    // }
 
     handleCommentAdd = ( event ) => {
         event.preventDefault();
@@ -37,6 +39,7 @@ class PostDetailScene extends Component {
             parentId: this.props.post.id,
             timestamp:Date.now()
         }
+
         this.props.addComment( comment )
         };
 
@@ -44,44 +47,22 @@ class PostDetailScene extends Component {
 
 
     render () {
-        const { post, commentIds, deletePost, comments, sendPostVote } = this.props;
+        const { idPost, post, commentIds, comments } = this.props;
         const postComments = commentIds.map( id => comments[id]);
-
+        console.log(commentIds)
         return (
             <div>
                 {post && post.title && postComments? (
                     <div>
-                        <div>
-                            <div>
-                                <h5>{post.category}</h5>
-                                <h6>{post.author}</h6>
-                                {/*왜 category를 못가져오지??*/}
-                                {/*<h6 className="mb-0">{post.category}</h6>*/}
-                                <time dateTime={ dateTimeFormat(post.timestamp)}>{ fromNow(post.timestamp)}</time>
-                            </div>
-                            <h4>{post.title}</h4>
-                            <div>{post.body}</div>
-                        </div>
-
-                        {/*왜 post 만 다이렉트로 도킹이 안될까? Root 에서는 됐는데요*/}
-                        <div>
-                            <PostControl
-                                post={post}
-                                onDelete={deletePost}
-                                onSendVote={sendPostVote}
-                                onBack={this.windowBack}/>
-                        </div>
-
+                        <PostItem post={post}/>
                         {
                             postComments.map(comment => (
                                 <CommentItem
                                     key={comment.id}
                                     comment={comment}
-
                                 />
                             ))
                         }
-
                     </div>
                 ) : (
                     <div>
@@ -91,7 +72,6 @@ class PostDetailScene extends Component {
                     </div>
                 )}
                 <hr />
-                {/*add 바로보내면 안되고!  */}
                 <h3>ADD COMMENT</h3>
                 <CommentForm
                     onFormSubmit={this.handleCommentAdd}
@@ -105,7 +85,6 @@ class PostDetailScene extends Component {
         );
     }
 }
-// export default PostItem;
 
 function mapStateToProps(state, ownProps){
     return {
@@ -113,11 +92,9 @@ function mapStateToProps(state, ownProps){
         commentIds: state.comments.ids,
         idPost: ownProps.match.params.idPost,
         post: state.posts.entities[ownProps.match.params.idPost],
-        // posts:state.posts.entities,
     }
 }
 
-// 이따가 mapDispatch 로 옮기는게 어때?
 export default  connect(
     mapStateToProps, {
         sendPostVote,
@@ -127,6 +104,3 @@ export default  connect(
         addComment,
         }
 )(PostDetailScene);
-
-
-// export default PostDetailScene;

@@ -30,17 +30,18 @@ class PostControl extends Component {
                     </div>
 
                     <Link to={`/edit/post/${post.id}`}>
-                        <button>Edit Button</button>
+                        <button className='edit-button'>Edit</button>
                     </Link>
 
                     <button
+                        className='delete-button'
                         onClick={ e => {
                             e.preventDefault();
                             onDelete(post.id)
                             if (onBack) onBack()
                         }}
 
-                    >Delete Button</button>
+                    >Delete</button>
                 </div>
             </div>
         );

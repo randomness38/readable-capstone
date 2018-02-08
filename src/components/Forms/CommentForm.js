@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
-// import { withRouter } from 'react-router-dom';
-// import { connect } from 'react-redux';
-
+import '../PostDetailScene/PostDetailScene.css';
 
 class CommentForm extends Component {
 
@@ -10,8 +8,6 @@ class CommentForm extends Component {
         author: "",
         body: "",
     }
-
-    // submit 누르면 도킹 받아먹는애가 없는데??
 
     componentDidMount() {
         if( this.props.isEditing ) {
@@ -22,26 +18,14 @@ class CommentForm extends Component {
         }
     }
 
-
-
-    // componentWillReceiveProps(nextProps) {
-    //     if( this.props.isEditing ) {
-    //         this.setState({
-    //             author: nextProps.comment.author,
-    //             body: nextProps.comment.body,
-    //         });
-    //     }
-    // }
-
     handleInputChange(e) {
         this.setState({[e.target.name]: e.target.value})
     }
     render () {
         const { onFormSubmit } = this.props;
-        // const { author, body } = this.state;
 
         return (
-            <form className="PostForm" onSubmit={ onFormSubmit }>
+            <form className="comment-form" onSubmit={ onFormSubmit }>
 
                 <div className="card-footer">
                     <div className="form-group">
@@ -72,8 +56,6 @@ class CommentForm extends Component {
 
                 </div>
                 <div className="card-body text-right">
-                    {/*<button onClick={this.cancelCommentAdd}*/}
-                    {/*>Cancel</button>*/}
                     <button
                     >SAVE</button>
                 </div>

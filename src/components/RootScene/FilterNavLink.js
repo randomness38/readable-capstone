@@ -6,12 +6,12 @@ const FilterNaveLink = ({
                         children
                     }) => (
     <NavLink
+        className='nav-link'
         exact
         to={`/category/${filter === 'all' ? '' : filter}`}
-        activeStyle={{
-            textDecoration: 'none',
-            color: 'black',
-        }}
+        // activeStyle={{
+        //      textDecoration: 'none',
+        //  }}
     >
         {children}
     </NavLink>
