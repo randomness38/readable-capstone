@@ -18,8 +18,10 @@ class PostDetailScene extends Component {
     componentDidMount() {
         // 여기서 이미 comment filter 해서 올텐데?
         const { idPost, fetchComments, fetchPosts} = this.props;
+        // 제가보기에 얘는 all comments fetch 같슴다 기능을 못하능거 같아여 ??
         fetchComments(idPost);
         fetchPosts()
+        console.log(this.props.comments)
 
     }
 
@@ -43,26 +45,39 @@ class PostDetailScene extends Component {
         this.props.addComment( comment )
         };
 
-
+    sortCommentsByDate = ( comments ) => {
+        if( comments !== undefined ) {
+            return comments.sort((a, b) => a.timestamp > b.timestamp);
+        } else {
+            return comments;
+        }
+    }
 
 
     render () {
-        const { idPost, post, commentIds, comments } = this.props;
+        const { post, commentIds, comments } = this.props;
         const postComments = commentIds.map( id => comments[id]);
-        console.log(commentIds)
+        console.log(comments)
+        console.log(postComments)
         return (
             <div>
-                {post && post.title && postComments? (
+                {post && postComments? (
                     <div>
                         <PostItem post={post}/>
-                        {
-                            postComments.map(comment => (
-                                <CommentItem
-                                    key={comment.id}
-                                    comment={comment}
-                                />
-                            ))
-                        }
+                        { this.sortCommentsByDate(postComments).map( comment => (
+                            <CommentItem
+                                key={comment.id}
+                                comment={comment}
+                            />
+                        ))}
+                        {/*{*/}
+                            {/*postComments.map(comment => (*/}
+                                {/*<CommentItem*/}
+                                    {/*key={comment.id}*/}
+                                    {/*comment={comment}*/}
+                                {/*/>*/}
+                            {/*))*/}
+                        {/*}*/}
                     </div>
                 ) : (
                     <div>
