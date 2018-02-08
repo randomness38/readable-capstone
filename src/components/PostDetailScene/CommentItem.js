@@ -7,6 +7,8 @@ import CommentForm from '../Forms/CommentForm';
 import CommentControl from './CommentControl';
 import {deleteComment, sendCommentVote, editComment} from "../../actions/comments";
 import './PostDetailScene.css';
+import { Label,Jumbotron,Button } from 'react-bootstrap';
+
 
 class CommentItem extends Component {
 
@@ -37,17 +39,23 @@ class CommentItem extends Component {
     render () {
         const { comment, deleteComment, sendCommentVote } = this.props;
         return (
-            <div className='comment-item__list'>
-                <time dateTime={ dateTimeFormat(comment.timestamp)}>{ fromNow(comment.timestamp)}</time>
-                <h4>{comment.body}</h4>
-                <h5>{comment.author}</h5>
-                <div>
-                    <CommentControl
-                        comment={comment}
-                        onDelete={deleteComment}
-                        onSendVote={sendCommentVote}
-                        onEditing={this.onEditing}
-                    />
+            <div>
+                <div className='jumbotron-container'>
+                    <Jumbotron>
+                        <time dateTime={ dateTimeFormat(comment.timestamp)}>{ fromNow(comment.timestamp)}</time>
+                        <h1>{comment.body}</h1>
+                        <p>
+                            {comment.author}
+                        </p>
+                        <CommentControl
+                            comment={comment}
+                            onDelete={deleteComment}
+                            onSendVote={sendCommentVote}
+                            onEditing={this.onEditing}
+                        />
+                    </Jumbotron>
+
+
                 </div>
                 {
                     this.state.isEditing &&

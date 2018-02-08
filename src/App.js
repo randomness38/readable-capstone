@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
 // 왜 안먹히지
 import './App.css';
-import { ToastContainer } from 'react-toastify';
 import RootScene from './components/RootScene';
 import AppHeader from './components/RootScene/AppHeader';
 import AddPostScene from "./components/AddPostScene";
@@ -62,16 +61,6 @@ class App extends Component {
                         {/*/>*/}
                         <Route exact path="/:category/:idPost" component={PostDetailScene}/>
                     </Switch>
-
-                    <ToastContainer
-                        position="top-right"
-                        type="default"
-                        autoClose={5000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        pauseOnHover
-                    />
 
                 </div>
             </BrowserRouter>

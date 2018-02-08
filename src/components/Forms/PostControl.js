@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Button, Glyphicon } from 'react-bootstrap';
 
 
 class PostControl extends Component {
@@ -12,20 +13,28 @@ class PostControl extends Component {
                 <div>
                     {/*VOTE PLACE*/}
                     <div>
-                        <i onClick={(e) => {
+
+
+                        <a
+                            // className='far fa-thumbs-up'
+                              onClick={(e) => {
                             e.preventDefault();
                             onSendVote(post.id,"upVote",'posts')
                         }}
-                          >   UP  </i>
+                          >Up </a>
 
-                        <span>{post.voteScore}</span>
 
-                        <i onClick={(e) => {
+                        <Button bsSize="small">
+                            <Glyphicon glyph="star" /> {post.voteScore}
+                        </Button>
+
+                        <a
+                           onClick={(e) => {
                             e.preventDefault();
                             onSendVote(post.id,"downVote",'posts')
 
                         }}
-                        >   DOWN  </i>
+                        > Down</a>
 
                     </div>
 

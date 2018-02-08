@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import { Link } from 'react-router-dom';
 import FormSerialize from 'form-serialize';
 import uuid from 'uuid'
+import { Pager } from 'react-bootstrap';
 
 import CommentItem from './CommentItem';
 import PostItem from '../Forms/PostItem';
@@ -92,10 +93,10 @@ class PostDetailScene extends Component {
                     onFormSubmit={this.handleCommentAdd}
                     post={post}/>
                 <hr />
-                <h3>GO HOME</h3>
-                <Link
-                    to='/'
-                >Main</Link>
+                <Pager>
+                    <Pager.Item href='/'>GO HOME</Pager.Item>{' '}
+                </Pager>
+
             </div>
         );
     }

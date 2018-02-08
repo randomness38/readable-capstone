@@ -5,6 +5,8 @@ import { withRouter } from 'react-router';
 import SortBy from 'sort-by';
 import PostItem from "../Forms/PostItem";
 import {fetchPostsByCategory} from "../../actions/posts";
+import { ButtonGroup,Button } from 'react-bootstrap';
+
 
 
 class RootScene extends Component {
@@ -57,13 +59,17 @@ class RootScene extends Component {
 
         return (
             <div className='root-scene-container'>
-                <div>
-                    <div>
-                        <span>Order by </span>
-                        <select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>
-                            <option value="-voteScore">Best score</option>
-                            <option value="-timestamp">Most recent</option>
-                        </select>
+                <div className='sort-by-container'>
+                    <div className='button-group'>
+                        <ButtonGroup value={this.state.sortBy} onClick={(e) => this.sortBy(e.target.value)}>
+                            <Button value="-voteScore">Best score</Button>
+                            <Button value="-timestamp">Most recent</Button>
+                        </ButtonGroup>
+
+                        {/*<select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>*/}
+                            {/*<option value="-voteScore">Best score</option>*/}
+                            {/*<option value="-timestamp">Most recent</option>*/}
+                        {/*</select>*/}
                     </div>
 
                 </div>

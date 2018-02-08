@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import PostControl from './PostControl';
 import { fromNow } from './Setdate';
 import {deletePost, sendPostVote} from "../../actions/posts";
+import { Label,Jumbotron,Button } from 'react-bootstrap';
+
 
 class PostItem extends Component {
     render () {
@@ -12,30 +14,32 @@ class PostItem extends Component {
 
 
         return (
-            <div className='post-item-container'>
-                <div>
-                    <h6>{post.category}</h6>
+            <div>
+                <Jumbotron>
+                    <div>
+                        <h3>{post.category}</h3>
 
-                    <Link to={`/${post.category}/${post.id}`}>
-                        <h4>{post.title}</h4>
-                    </Link>
-                    <footer>
-                        Writte by {post.author}, { fromNow(post.timestamp)}
-                    </footer>
-                </div>
-                <div>
-                    <p>{post.commentCount === 0? 'Looking for Your Comment!':`${post.commentCount} comments!`}</p>
-                </div>
-                <div>
-                    <PostControl
-                        post={post}
-                        onDelete={deletePost}
-                        onSendVote={sendPostVote}
-                    />
-                </div>
-
+                        <Link to={`/${post.category}/${post.id}`}>
+                            <h4>{post.title}</h4>
+                        </Link>
+                        <footer>
+                            Writte by {post.author}, { fromNow(post.timestamp)}
+                        </footer>
+                    </div>
+                    <div className='comment-box'>
+                        <span>{post.commentCount === 0? 'Looking for Your Comment!':`${post.commentCount} comment` }</span>
+                        <span className='far fa-comments'> </span>
+                    </div>
+                    <div>
+                        <PostControl
+                            post={post}
+                            onDelete={deletePost}
+                            onSendVote={sendPostVote}
+                        />
+                    </div>
+                </Jumbotron>
             </div>
-        );
+        )
     }
 }
 

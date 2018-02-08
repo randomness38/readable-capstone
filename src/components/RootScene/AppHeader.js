@@ -3,6 +3,7 @@ import { withRouter, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../../actions/categories';
 import FilterNavLink from './FilterNavLink';
+import { Label } from 'react-bootstrap';
 
 class AppHeader extends Component {
 
@@ -11,6 +12,8 @@ class AppHeader extends Component {
         // const routeCategory = this.props.match.params.categoryName;
         const {categoriesIds, categories, categoryName} =  this.props;
         return (
+            <div >
+
             <div className='appHeader-container'>
                 <div className='main-link-container'>
                     <Link className='main-link'
@@ -41,13 +44,15 @@ class AppHeader extends Component {
                         to={'/add/post'}
                     >
                         <button className='add-post__button'>new post</button>
-                        <span className='add-post__text'>NEW POST</span>
+
+                        <span className='add-post__text' >CREATE POST  <Label>New!</Label></span>
+
                     </Link>
                 </div>
 
 
             </div>
-
+        </div>
         )
     }
 }

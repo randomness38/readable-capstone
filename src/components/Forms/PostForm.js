@@ -56,6 +56,10 @@ class PostForm extends Component {
         const { onFormSubmit, formHeaderTitle, categories, categoryIds  } = this.props;
 
         return (
+            <div>
+
+
+
             <form className='add-post-form' onSubmit={ onFormSubmit }>
                 <div>
                     <h4>{ formHeaderTitle }</h4>
@@ -127,7 +131,8 @@ class PostForm extends Component {
                     >Save Post</button>
                 </div>
             </form>
-        );
+        </div>
+        )
     }
 }
 
