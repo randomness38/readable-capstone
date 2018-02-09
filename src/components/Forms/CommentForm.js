@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import '../PostDetailScene/PostDetailScene.css';
 

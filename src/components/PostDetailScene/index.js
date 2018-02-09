@@ -3,14 +3,10 @@ import {connect} from "react-redux";
 import FormSerialize from 'form-serialize';
 import uuid from 'uuid'
 import { Pager } from 'react-bootstrap';
-
 import CommentItem from './CommentItem';
 import ErorrPage from './ErorrPage';
 import PostItem from '../Forms/PostItem';
 import CommentForm from '../Forms/CommentForm';
-// import {fetchComments, addComment} from "../../actions/comments";
-// import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
-
 import * as actions from "../../actions";
 
 

@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Glyphicon } from 'react-bootstrap';
 
-//
-
 const PostControl = ({ post, onDelete, onSendVote, onBack }) => (
     <div className='post-control-container'>
         <div>

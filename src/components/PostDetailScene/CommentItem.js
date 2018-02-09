@@ -5,9 +5,9 @@ import FormSerialize from 'form-serialize';
 import { fromNow, dateTimeFormat } from '../Forms/Setdate';
 import CommentForm from '../Forms/CommentForm';
 import CommentControl from './CommentControl';
-import {deleteComment, sendCommentVote, editComment} from "../../actions/comments";
+import * as actions from '../../actions';
 import './PostDetailScene.css';
-import { Label,Jumbotron,Button } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 
 
 class CommentItem extends Component {
@@ -70,5 +70,5 @@ class CommentItem extends Component {
 }
 
 export default  connect(
-    null, { deleteComment, sendCommentVote, editComment }
+    null, actions
 )(CommentItem);

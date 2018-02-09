@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Pager } from 'react-bootstrap';
 
-
 class ErorrPage extends Component {
 
     render () {
