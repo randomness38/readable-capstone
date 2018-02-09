@@ -1,27 +1,7 @@
-// // const categories = (state = {}, action) => {
-// //     const { categories } = action
-// //     switch (action.type) {
-// //         case 'FETCH_CATEGORIES_SUCCESS':
-// //             return {
-// //                 ...state,
-// //                 categories
-// //                 // ...action.response.entities.categories
-// //             };
-// //
-// //         default:
-// //             return state;
-// //     }
-// // }
-// //
-// // export default categories;
-//
-//
 import { normalize, schema } from 'normalizr';
-import {LOAD_CATEGORIES} from "../actions/categories";
+import {LOAD_CATEGORIES} from "../actions/actionTypes";
 
-//
-// // This will just add an id key to the data equal to the key name,
-// // just to be able to pass this to normalize.
+
 function prepareCategoryDataForNormalizer(rawData) {
 
     return {

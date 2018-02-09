@@ -1,33 +1,23 @@
 import * as Api from "../api";
-export const LOAD_POSTS = '[Post] Load posts';
-export const LOAD_POST = '[Post] Vote';
-export const DELETE_POST = '[Post] Delete post';
+import * as actions from './actionTypes'
+
 
 export const loadPosts = (posts) => {
     return {
-        type: LOAD_POSTS,
+        type: actions.LOAD_POSTS,
         posts
     }
 };
 
 export const loadPost = (post) => {
     return {
-        type: LOAD_POST,
+        type: actions.LOAD_POST,
         post
     }
 };
 
 
-// export const removePost = (id) => {
-//     return {
-//         type: DELETE_POST,
-//         id
-//     }
-// };
-
-// 문법 맞나 모르거따
 export const addPost = (body) => dispatch => {
-    // const postId = uuid();
     return Api.addPost(body)
         .then(post => dispatch(loadPost(post)));
 };
@@ -37,7 +27,6 @@ export const editPost = (body) => dispatch => {
         .then(post => dispatch(loadPost(post)));
 };
 
-// 어떻게 reducer가 없어 이 type 을 다루는
 export const sendPostVote = (id, vote, type) => dispatch => {
     Api.vote(id, vote, type)
         .then(post => dispatch(loadPost(post)))
@@ -59,7 +48,7 @@ export const fetchPostsByCategory = (category) => dispatch => {
 
 export const removePost = (id) => {
     return {
-        type: DELETE_POST,
+        type: actions.DELETE_POST,
         id
     }
 };
@@ -69,12 +58,3 @@ export const deletePost = (id) => dispatch => {
         .then(() => dispatch(removePost(id)))
 }
 
-//
-// export const deletePost = ( id ) => dispatch => (
-//     Api
-//     .deletePost( id )
-//     .then(dispatch({
-//         type: DELETE_POST,
-//         id
-//     }))
-// );

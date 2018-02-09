@@ -1,20 +1,13 @@
-
-
-/**
- * NEW
- */
-
+import * as action from './actionTypes'
 import {getCategories} from "../api";
 
-export const LOAD_CATEGORIES = '[Categories] fetch';
 
 export const loadCategories = (categories) =>  {
     return {
-        type: LOAD_CATEGORIES,
+        type: action.LOAD_CATEGORIES,
         categories
     }
 };
-// 와우 어떻게 res.categories 가 될까?
 export const fetchCategories = () => dispatch => {
     getCategories().then(res => {
         dispatch(loadCategories(res.categories))

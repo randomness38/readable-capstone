@@ -1,15 +1,9 @@
 import * as Api from "../api";
-
-export const LOAD_COMMENTS = '[Comment] Load comments';
-export const LOAD_COMMENT = '[Comment] Load comment';
-export const ADD_COMMENT = '[Comment] Add comment';
-export const EDIT_COMMENT = '[Comment] Edit comment';
-export const DELETE_COMMENT = '[Comment] Delete comment';
-export const VOTE_COMMENT = '[Comment] Vote comment';
+import * as action from './actionTypes'
 
 export const loadComments = (comments) => {
     return {
-        type: LOAD_COMMENTS,
+        type: action.LOAD_COMMENTS,
         comments
     }
 };
@@ -21,7 +15,7 @@ export const fetchComments = (idPost) => dispatch => {
 
 export const loadComment = (comment) => {
     return {
-        type: LOAD_COMMENT,
+        type: action.LOAD_COMMENT,
         comment
     }
 };
@@ -36,11 +30,6 @@ export const editComment = (body, id) => dispatch => {
         .then(comment => dispatch(loadComment(comment)));
 };
 
-// export const sendCommentVote = (id, vote) => dispatch => {
-//     Api.vote(id, vote)
-//         .then(comment => dispatch(loadComment(comment)));
-// };
-
 export const sendCommentVote = (id, vote, type) => dispatch => {
     Api.vote(id, vote, type)
         .then(comment => dispatch(loadComment(comment)))
@@ -50,7 +39,7 @@ export const sendCommentVote = (id, vote, type) => dispatch => {
 
 export const removeComment = (id) => {
     return {
-        type: DELETE_COMMENT,
+        type: action.DELETE_COMMENT,
         id
     }
 };

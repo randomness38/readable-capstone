@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 import {connect} from "react-redux";
 import { withRouter } from 'react-router';
@@ -42,7 +41,6 @@ class RootScene extends Component {
     render() {
         const {posts, postsIds, categoryName} =  this.props;
         let postsToRender, filteredPosts;
-        // 여기가 안먹힘 지금 categoryName이 all이 안떠
         if(categoryName === 'all'){
             filteredPosts = postsIds.map( postId => posts[postId] )
         } else {
