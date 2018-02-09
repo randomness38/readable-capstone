@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-import { Link } from 'react-router-dom';
 import FormSerialize from 'form-serialize';
 import uuid from 'uuid'
 import { Pager } from 'react-bootstrap';
 
 import CommentItem from './CommentItem';
+import ErorrPage from './ErorrPage';
 import PostItem from '../Forms/PostItem';
 import CommentForm from '../Forms/CommentForm';
 import {fetchComments, addComment} from "../../actions/comments";
@@ -28,9 +28,9 @@ class PostDetailScene extends Component {
 
 
 
-    // windowBack = () => {
-    //     window.history.back()
-    // }
+    windowBack = () => {
+        window.history.back()
+    }
 
     handleCommentAdd = ( event ) => {
         event.preventDefault();
@@ -62,9 +62,13 @@ class PostDetailScene extends Component {
         console.log(postComments)
         return (
             <div>
+                {/*{ post === undefined &&*/}
+                {/*<ErorrPage />}*/}
                 {post && postComments? (
                     <div>
-                        <PostItem post={post}/>
+                        <PostItem
+                            post={post}
+                            onBack={this.windowBack}/>
                         { this.sortCommentsByDate(postComments).map( comment => (
                             <CommentItem
                                 key={comment.id}
@@ -79,23 +83,23 @@ class PostDetailScene extends Component {
                                 {/*/>*/}
                             {/*))*/}
                         {/*}*/}
+                        <h3>ADD COMMENT</h3>
+                        <CommentForm
+                            onFormSubmit={this.handleCommentAdd}
+                            post={post}/>
+                        <hr />
+                        <Pager>
+                            <Pager.Item href='/'>GO HOME</Pager.Item>{' '}
+                        </Pager>
                     </div>
                 ) : (
                     <div>
                         <div>
-                            This post doesn't exist has been removed.
+                            <ErorrPage />
                         </div>
                     </div>
                 )}
-                <hr />
-                <h3>ADD COMMENT</h3>
-                <CommentForm
-                    onFormSubmit={this.handleCommentAdd}
-                    post={post}/>
-                <hr />
-                <Pager>
-                    <Pager.Item href='/'>GO HOME</Pager.Item>{' '}
-                </Pager>
+
 
             </div>
         );

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import PostControl from './PostControl';
 import { fromNow } from './Setdate';
 import {deletePost, sendPostVote} from "../../actions/posts";
-import { Label,Jumbotron,Button } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 
 
 class PostItem extends Component {
     render () {
 
-        const { post, deletePost, sendPostVote } = this.props;
+        const { post, deletePost, sendPostVote, onBack } = this.props;
 
 
         return (
@@ -35,6 +35,7 @@ class PostItem extends Component {
                             post={post}
                             onDelete={deletePost}
                             onSendVote={sendPostVote}
+                            onBack={onBack}
                         />
                     </div>
                 </Jumbotron>
