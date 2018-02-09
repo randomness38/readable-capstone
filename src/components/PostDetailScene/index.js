@@ -8,10 +8,10 @@ import CommentItem from './CommentItem';
 import ErorrPage from './ErorrPage';
 import PostItem from '../Forms/PostItem';
 import CommentForm from '../Forms/CommentForm';
-import {fetchComments, addComment} from "../../actions/comments";
-import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
+// import {fetchComments, addComment} from "../../actions/comments";
+// import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
 
-// import {commentActions, postActions, categoryActions} from "../../actions";
+import * as actions from "../../actions";
 
 
 
@@ -115,17 +115,18 @@ function mapStateToProps(state, ownProps){
     }
 }
 
-// export default  connect(
-//     mapStateToProps, {}
-// )(PostDetailScene);
-
-
 export default  connect(
-    mapStateToProps, {
-        sendPostVote,
-        fetchComments,
-        fetchPosts,
-        deletePost,
-        addComment,
-        }
+    mapStateToProps,
+    actions
 )(PostDetailScene);
+
+
+// export default  connect(
+//     mapStateToProps, {
+//         sendPostVote,
+//         fetchComments,
+//         fetchPosts,
+//         deletePost,
+//         addComment,
+//         }
+// )(PostDetailScene);

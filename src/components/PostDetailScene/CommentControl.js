@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+
+// import React from 'react';
+import React, {Component} from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
 
-
+// CommentControl 은 component 가 아니면 this.props.editing 을 받아먹지를 못하는데
+// 왜 때문이지?
 class CommentControl extends Component {
 
     render () {
-
         const { comment, onDelete, onSendVote } = this.props;
 
         return (
