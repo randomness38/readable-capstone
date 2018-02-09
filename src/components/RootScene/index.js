@@ -6,8 +6,6 @@ import PostItem from "../Forms/PostItem";
 import {fetchPostsByCategory} from "../../actions/posts";
 import { ButtonGroup,Button } from 'react-bootstrap';
 
-
-
 class RootScene extends Component {
 
     componentDidMount() {
@@ -22,10 +20,8 @@ class RootScene extends Component {
 
     fetchData() {
         const { categoryName, fetchPostsByCategory } = this.props;
-        // console.log(categoryName)
         fetchPostsByCategory(categoryName);
     }
-
 
 
     state = {
@@ -51,10 +47,6 @@ class RootScene extends Component {
         postsToRender = filteredPosts.filter( post => !post.deleted );
         postsToRender.sort(SortBy(this.state.sortBy))
 
-
-        // this.setState({filteredPosts: postsToRender});
-        // console.log(postsToRender)
-
         return (
             <div className='root-scene-container'>
                 <div className='sort-by-container'>
@@ -64,10 +56,6 @@ class RootScene extends Component {
                             <Button value="-timestamp">Most recent</Button>
                         </ButtonGroup>
 
-                        {/*<select value={this.state.sortBy} onChange={(e) => this.sortBy(e.target.value)}>*/}
-                            {/*<option value="-voteScore">Best score</option>*/}
-                            {/*<option value="-timestamp">Most recent</option>*/}
-                        {/*</select>*/}
                     </div>
 
                 </div>
@@ -79,44 +67,23 @@ class RootScene extends Component {
                         ))
                     }
                 </div>
-
-
-
-
-
             </div>
-
-
-
         );
-
     }
 }
 
 function mapStateToProps(state, ownProps) {
-    // const match = this.props;
-    // const {params} = match;
-    // const {categoryName} = params;
-    // console.log(params.categoryName);
-    // const categoryName = params.categoryName || 'all';
     return {
         categoryName: ownProps.match.params.categoryName || 'all',
-        // posts: posts.ids.map(id => posts.entities[id]),
         categories: state.categories.entities,
         categoriesIds: state.categories.ids,
         posts: state.posts.entities,
         postsIds: state.posts.ids,
     }
 }
-//
-// RootScene = withRouter(connect(mapStateToProps)(RootScene));
-//
-// export default RootScene;
 
 RootScene = withRouter(connect(
     mapStateToProps, { fetchPostsByCategory }
 )(RootScene));
 
 export default RootScene;
-
-// export default connect(mapStateToProps)(RootScene);

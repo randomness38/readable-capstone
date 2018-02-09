@@ -2,15 +2,12 @@ import {normalize} from 'normalizr';
 import {COMMENT_LIST_SCHEMA} from './schemas';
 import * as actions from "../actions/actionTypes";
 
-// import {DELETE_COMMENT, LOAD_COMMENT} from "../actions/comments";
-// import {DELETE_POST} from "../actions/posts";
-
 const initialState = {
     ids: [],
     entities: {}
 };
 
-export default function reducer(state = initialState, action) {
+const comments = (state = initialState, action) => {
 
     switch (action.type) {
 
@@ -78,3 +75,5 @@ export default function reducer(state = initialState, action) {
     }
 
 }
+
+export default comments;

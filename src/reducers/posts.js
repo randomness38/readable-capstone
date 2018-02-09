@@ -2,12 +2,12 @@ import {normalize} from 'normalizr';
 import * as actions from "../actions/actionTypes";
 import {POST_LIST_SCHEMA} from './schemas';
 
-const ininitalState = {
+const initialState = {
     ids: [],
     entities: {}
 };
 
-export default function reducer(state = ininitalState, action) {
+const posts = (state = initialState, action) => {
 
     switch (action.type) {
 
@@ -22,9 +22,7 @@ export default function reducer(state = ininitalState, action) {
                 ids: [...state.ids, ...newIds],
                 entities: {...state.entities, ...newEntities}
             }
-
         }
-
         case actions.LOAD_POST: {
 
             const post = action.post;
@@ -35,10 +33,8 @@ export default function reducer(state = ininitalState, action) {
             }
 
         }
-
         case actions.DELETE_POST: {
             const id = action.id;
-
 
             return {
                 ...state,
@@ -51,11 +47,10 @@ export default function reducer(state = ininitalState, action) {
                 }
             }
         }
-
         default: {
             return state;
         }
-
     }
-
 }
+
+export default posts;

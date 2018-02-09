@@ -14,7 +14,7 @@ function prepareCategoryDataForNormalizer(rawData) {
 
 }
 
-export default function categoriesReducer(state = {}, action) {
+const categories = (state = {}, action) => {
     switch (action.type) {
 
         case LOAD_CATEGORIES :
@@ -40,23 +40,4 @@ export default function categoriesReducer(state = {}, action) {
     }
 }
 
-//
-//
-// const initialState = {
-//     categories:[]
-// };
-//
-// export default function reducer(state = initialState, action) {
-//
-//     switch (action.type) {
-//         case LOAD_CATEGORIES: {
-//             const {categories} = action;
-//             return {categories};
-//         }
-//
-//         default: {
-//             return state;
-//         }
-//     }
-//
-// }
+export default categories;
