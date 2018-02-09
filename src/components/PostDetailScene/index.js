@@ -11,6 +11,8 @@ import CommentForm from '../Forms/CommentForm';
 import {fetchComments, addComment} from "../../actions/comments";
 import {fetchPosts, deletePost, sendPostVote} from "../../actions/posts";
 
+// import {commentActions, postActions, categoryActions} from "../../actions";
+
 
 
 class PostDetailScene extends Component {
@@ -62,8 +64,6 @@ class PostDetailScene extends Component {
         console.log(postComments)
         return (
             <div>
-                {/*{ post === undefined &&*/}
-                {/*<ErorrPage />}*/}
                 {post && postComments? (
                     <div>
                         <PostItem
@@ -114,6 +114,11 @@ function mapStateToProps(state, ownProps){
         post: state.posts.entities[ownProps.match.params.idPost],
     }
 }
+
+// export default  connect(
+//     mapStateToProps, {}
+// )(PostDetailScene);
+
 
 export default  connect(
     mapStateToProps, {

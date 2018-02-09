@@ -3,58 +3,49 @@ import { Link } from 'react-router-dom';
 import { Button, Glyphicon } from 'react-bootstrap';
 
 
-class PostControl extends Component {
+const PostControl = ({ post, onDelete, onSendVote, onBack }) => (
+    <div className='post-control-container'>
+        <div>
+            {/*VOTE PLACE*/}
+            <div>
+                <a
+                    // className='far fa-thumbs-up'
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onSendVote(post.id,"upVote",'posts')
+                    }}
+                >Up </a>
 
-    render () {
+                <Button bsSize="small">
+                    <Glyphicon glyph="star" /> {post.voteScore}
+                </Button>
 
-        const { post, onDelete, onSendVote, onBack } = this.props;
-        return (
-            <div className='post-control-container'>
-                <div>
-                    {/*VOTE PLACE*/}
-                    <div>
+                <a
+                    onClick={(e) => {
+                        e.preventDefault();
+                        onSendVote(post.id,"downVote",'posts')
 
+                    }}
+                > Down</a>
 
-                        <a
-                            // className='far fa-thumbs-up'
-                              onClick={(e) => {
-                            e.preventDefault();
-                            onSendVote(post.id,"upVote",'posts')
-                        }}
-                          >Up </a>
-
-
-                        <Button bsSize="small">
-                            <Glyphicon glyph="star" /> {post.voteScore}
-                        </Button>
-
-                        <a
-                           onClick={(e) => {
-                            e.preventDefault();
-                            onSendVote(post.id,"downVote",'posts')
-
-                        }}
-                        > Down</a>
-
-                    </div>
-
-                    <Link to={`/edit/post/${post.id}`}>
-                        <button className='edit-button'>Edit</button>
-                    </Link>
-
-                    <button
-                        className='delete-button'
-                        onClick={ e => {
-                            e.preventDefault();
-                            onDelete(post.id)
-                            if (onBack) onBack()
-                        }}
-
-                    >Delete</button>
-                </div>
             </div>
-        );
-    }
-}
+
+            <Link to={`/edit/post/${post.id}`}>
+                <button className='edit-button'>Edit</button>
+            </Link>
+
+            <button
+                className='delete-button'
+                onClick={ e => {
+                    e.preventDefault();
+                    onDelete(post.id)
+                    if (onBack) onBack()
+                }}
+
+            >Delete</button>
+        </div>
+    </div>
+)
+
 
 export default PostControl;
